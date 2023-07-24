@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+
+    /* GRAY GRADIENTS */
+    .bg-gradient-one {
+        background: var(--gradient-1, linear-gradient(90deg, #060405 0%, #040304 25%, rgba(0, 0, 0, 0.45) 73.96%, rgba(4, 4, 4, 0.00) 100%));
+    }
+
+    .bg-gradient-two {
+        background: linear-gradient(180deg, #030202 0%, rgba(3, 3, 3, 0.60) 51.04%, rgba(3, 3, 3, 0.52) 57.29%, rgba(3, 3, 3, 0.00) 97.92%);
+    }
+
+    .bg-gradient-three {
+        background: var(--gradient-3, linear-gradient(90deg, rgba(0, 0, 0, 0.80) 0%, rgba(5, 4, 4, 0.36) 44.79%, rgba(2, 1, 2, 0.00) 100%));
+    }
+
+    .bg-gradient-four {
+        background: var(--gradient-4, linear-gradient(0deg, rgba(0, 0, 0, 0.60) 19.09%, rgba(0, 0, 0, 0.17) 59.38%, rgba(0, 0, 0, 0.00) 100%));
+    }
+
+    .bg-gradient-five {
+        background: var(--gradient-5, linear-gradient(90deg, rgba(11, 10, 5, 0.80) 58.33%, rgba(8, 5, 19, 0.32) 79.17%, rgba(8, 5, 19, 0.00) 96.88%));
+    }
+
+    /* BLURS */
+    .blur {
+        background: rgba(255, 255, 255, 0.40);
+        filter: blur(4px);
+    }
+}
+
+@layer components {
+
+    .heading-2xl {
+        font-family: Cinzel;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 80px;
+        letter-spacing: 7px;
+    }
+
+    .heading-xl {
+        font-family: Cinzel;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: 6px;
+    }
+
+    .heading-3lg {
+        font-family: Cinzel;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 50px;
+        letter-spacing: 5px;
+    }
+
+    .heading-2lg {
+        font-family: Cinzel;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 50px;
+    }
+
+    .heading-lg {
+        font-family: Cinzel;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0.32px;
+    }
+
+    .heading-2md {
+        font-family: Cinzel;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0.28px;
+    }
+
+    .heading-md {
+        color: var(--neutrals-black-black-100, #FFF);
+        font-family: Cinzel;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.48px;
+    }
+
+    .heading-sm {
+        font-family: Cinzel;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    .heading-xs {
+        font-family: Cinzel;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    .heading-xxs {
+        font-family: Cinzel;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    .body-lg {
+        font-family: Sorts Mill Goudy;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    .body-2md {
+        font-family: Sorts Mill Goudy;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    .body-md {
+        font-family: Sorts Mill Goudy;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    .body-sm {
+        font-family: Sorts Mill Goudy;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+}
