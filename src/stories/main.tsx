@@ -1,8 +1,8 @@
-import type { StorybookConfig } from '@storybook/react';
+import type { StorybookConfig } from '@storybook/react-vite';
 
 const config: StorybookConfig = {
   // Required
-  framework: '@storybook/your-framework',
+  framework: '@storybook/react-vite',
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   // Optional
   addons: ['@storybook/addon-essentials'],

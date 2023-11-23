@@ -1,0 +1,66 @@
+{
+  "images": {
+    "warrior": {
+      "common": "assets/battlecard/cards/warrior/andreas1.png",
+      "uncommon": "assets/battlecard/cards/warrior/andreas2.png",
+      "rare": "assets/battlecard/cards/warrior/andreas3.png",
+      "epic": "assets/battlecard/cards/warrior/andreas4.png",
+      "legendary": "assets/battlecard/cards/warrior/andreas5.png",
+      "divine": "assets/battlecard/cards/warrior/andreas6.png"
+    },
+    "hero": {
+      "common": "assets/battlecard/cards/hero/hercules1.png",
+      "uncommon": "assets/battlecard/cards/hero/hercules2.png",
+      "rare": "assets/battlecard/cards/hero/hercules3.png",
+      "epic": "assets/battlecard/cards/hero/hercules4.png",
+      "legendary": "assets/battlecard/cards/hero/hercules5.png",
+      "divine": "assets/battlecard/cards/hero/hercules6.png"
+    },
+    "creature": {
+      "common": "assets/battlecard/cards/creature/griffin1.png",
+      "uncommon": "assets/battlecard/cards/creature/griffin2.png",
+      "rare": "assets/battlecard/cards/creature/griffin3.png",
+      "epic": "assets/battlecard/cards/creature/griffin4.png",
+      "legendary": "assets/battlecard/cards/creature/griffin5.png",
+      "divine": "assets/battlecard/cards/creature/griffin6.png"
+    },
+    "titan": {
+      "common": "assets/battlecard/cards/titan/atlas1.png",
+      "uncommon": "assets/battlecard/cards/titan/atlas2.png",
+      "rare": "assets/battlecard/cards/titan/atlas3.png",
+      "epic": "assets/battlecard/cards/titan/atlas4.png",
+      "legendary": "assets/battlecard/cards/titan/atlas5.png",
+      "divine": "assets/battlecard/cards/titan/atlas6.png"
+    },
+    "god": {
+      "common": "assets/battlecard/cards/god/zeus1.png",
+      "uncommon": "assets/battlecard/cards/god/zeus2.png",
+      "rare": "assets/battlecard/cards/god/zeus3.png",
+      "epic": "assets/battlecard/cards/god/zeus4.png",
+      "legendary": "assets/battlecard/cards/god/zeus5.png",
+      "divine": "assets/battlecard/cards/god/zeus6.png"
+    }
+  },
+  "powerranges": {
+    "warrior": {
+      "beginning": 1,
+      "end": 12
+    },
+    "hero": {
+      "beginning": 13,
+      "end": 24
+    },
+    "creature": {
+      "beginning": 25,
+      "end": 36
+    },
+    "titan": {
+      "beginning": 37,
+      "end": 48
+    },
+    "god": {
+      "beginning": 49,
+      "end": 60
+    }
+  }
+}

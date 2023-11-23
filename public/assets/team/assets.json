@@ -1,0 +1,26 @@
+{
+  "denis": {
+    "role": "FOUNDER AND PROJECT MANAGER",
+    "name": "Denis Ciupag",
+    "image": "/assets/team/pictures/denis.png",
+    "description": "Develop a consistent art style that complements the game's theme and enhances the player experience \n Design over 350 cards of iconic characters and creatures \n Create captivating environments and illustrations to bring the world of Realms of Glory to life. \n",
+    "twitter": "https://twitter.com/ssensix11",
+    "linkedin": "https://www.linkedin.com/in/denis-ciupag-26a826197/"
+  },
+  "Alex": {
+    "role": "Co-Founder & CTO",
+    "name": "Alexandru Gazdac",
+    "image": "/assets/team/pictures/alex.png",
+    "description": "Description goes here, description goes here, description goes, \n here, description goes here, description goes here. Description \n goes here, description goes here, description goes, here, description goes here, description goes here.",
+    "twitter": "https://twitter.com/AlexandruGazda1",
+    "linkedin": "https://www.linkedin.com/in/alexandru-gazdac/"
+  },
+  "iulia": {
+    "role": "UI / UX Designer",
+    "name": "Iulia Toma",
+    "image": "assets/team/pictures/iulia.png",
+    "description": "Description goes here, description goes here, description goes, \n here, description goes here, description goes here. Description \n goes here, description goes here, description goes, here, description goes here, description goes here.",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/iulia-toma-986a19177/"
+  }
+}

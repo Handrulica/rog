@@ -1,0 +1,17 @@
+{
+  "creature": {
+    "nft": "assets/shrine/nfts/medusa.png",
+    "card_1": "assets/shrine/cards/creature_1.png",
+    "card_2": "assets/shrine/cards/creature_2.png"
+  },
+  "titan": {
+    "nft": "assets/shrine/nfts/kronos.png",
+    "card_1": "assets/shrine/cards/titan_1.png",
+    "card_2": "assets/shrine/cards/titan_2.png"
+  },
+  "god": {
+    "nft": "assets/shrine/nfts/hades.png",
+    "card_1": "assets/shrine/cards/god_1.png",
+    "card_2": "assets/shrine/cards/god_2.png"
+  }
+}

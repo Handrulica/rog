@@ -1,0 +1,7 @@
+{
+  "warrior": "assets/treasures/icons/gladiator.png",
+  "hero": "assets/treasures/icons/dwarf.png",
+  "creature": "assets/treasures/icons/archmage.png",
+  "titan": "assets/treasures/icons/wizard.png",
+  "god": "assets/treasures/icons/druid.png"
+}

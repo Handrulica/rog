@@ -1,0 +1,32 @@
+{
+  "common": {
+    "image": "assets/rarities/common.png",
+    "description": "Common cards represent the baseline power level in the game. They are the most frequently found cards and provide a solid foundation for your deck.",
+    "drop_chance": 20
+  },
+  "uncommon": {
+    "image": "assets/rarities/uncommon.png",
+    "description": "Uncommon cards offer a step up in power compared to common cards. They possess increased strength and can give you an advantage in battles.",
+    "drop_chance": 35
+  },
+  "rare": {
+    "image": "assets/rarities/rare.png",
+    "description": "Rare cards are harder to come by but provide a significant power boost to your deck. They possess impressive strength and can turn the tide of battles in your favor.",
+    "drop_chance": 30
+  },
+  "epic": {
+    "image": "assets/rarities/epic.png",
+    "description": "Epic cards are the epitome of power and rarity in the game. They are exceptionally rare and possess unparalleled strength.",
+    "drop_chance": 15
+  },
+  "legendary": {
+    "image": "assets/rarities/legendary.png",
+    "description": "Legendary cards are the legends of the Realms of Glory. They are exceedingly rare, coveted by collectors and warriors alike and possess formidable power.",
+    "drop_chance": 8
+  },
+  "divine": {
+    "image": "assets/rarities/divine.png",
+    "description": "A deck containing Divine cards is a force to be reckoned with, capable of achieving feats of glory beyond imagination. They are the ultimate pinnacle of power in the Realms of Glory in every card category.",
+    "drop_chance": 4
+  }
+}

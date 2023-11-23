@@ -1,0 +1,52 @@
+{
+  "deck_images": {
+    "warrior": {
+      "common": ["assets/battledeck/warriors/common/andreas1.png", "assets/battledeck/warriors/common/damaris1.png", "assets/battledeck/warriors/common/darian1.png", "assets/battledeck/warriors/common/isadora1.png", "assets/battledeck/warriors/common/kostas1.png"],
+      "uncommon": ["assets/battledeck/warriors/uncommon/aghatos2.png", "assets/battledeck/warriors/uncommon/alexander2.png", "assets/battledeck/warriors/uncommon/isadora2.png", "assets/battledeck/warriors/uncommon/kallias2.png", "assets/battledeck/warriors/uncommon/menelaus2.png"],
+      "rare": ["assets/battledeck/warriors/rare/alexander3.png", "assets/battledeck/warriors/rare/damaris3.png", "assets/battledeck/warriors/rare/isadora3.png", "assets/battledeck/warriors/rare/kallias3.png", "assets/battledeck/warriors/rare/menelaus3.png"],
+      "epic": ["assets/battledeck/warriors/epic/aghatos4.png", "assets/battledeck/warriors/epic/andreas4.png", "assets/battledeck/warriors/epic/damaris4.png", "assets/battledeck/warriors/epic/darian4.png", "assets/battledeck/warriors/epic/theron4.png"],
+      "legendary": ["assets/battledeck/warriors/legendary/isadora5.png", "assets/battledeck/warriors/legendary/menelaus5.png"],
+      "divine": ["assets/battledeck/warriors/divine/andreas6.png", "assets/battledeck/warriors/divine/damaris6.png"]
+    },
+    "hero": {
+      "common": ["assets/battledeck/heroes/common/achiles1.png", "assets/battledeck/heroes/common/atalanta1.png", "assets/battledeck/heroes/common/helen1.png", "assets/battledeck/heroes/common/hercules1.png", "assets/battledeck/heroes/common/jason1.png"],
+      "uncommon": ["assets/battledeck/heroes/uncommon/atalanta2.png", "assets/battledeck/heroes/uncommon/cassandra2.png", "assets/battledeck/heroes/uncommon/hector2.png", "assets/battledeck/heroes/uncommon/hercules2.png", "assets/battledeck/heroes/uncommon/leonidas2.png"],
+      "rare": ["assets/battledeck/heroes/rare/achiles3.png", "assets/battledeck/heroes/rare/atalanta3.png", "assets/battledeck/heroes/rare/helen3.png", "assets/battledeck/heroes/rare/jason3.png", "assets/battledeck/heroes/rare/leonidas3.png"],
+      "epic": ["assets/battledeck/heroes/epic/achiles4.png", "assets/battledeck/heroes/epic/atalanta4.png", "assets/battledeck/heroes/epic/cassandra4.png", "assets/battledeck/heroes/epic/hercules4.png", "assets/battledeck/heroes/epic/jason4.png"],
+      "legendary": ["assets/battledeck/heroes/legendary/antiope5.png", "assets/battledeck/heroes/legendary/hercules5.png"],
+      "divine": ["assets/battledeck/heroes/divine/antiope6.png", "assets/battledeck/heroes/divine/jason6.png"]
+    },
+    "creature": {
+      "common": ["assets/battledeck/creatures/common/chimera1.png", "assets/battledeck/creatures/common/harpy1.png", "assets/battledeck/creatures/common/hydra1.png", "assets/battledeck/creatures/common/minotaur1.png", "assets/battledeck/creatures/common/satyr1.png"],
+      "uncommon": ["assets/battledeck/creatures/uncommon/centaur2.png", "assets/battledeck/creatures/uncommon/dryad2.png", "assets/battledeck/creatures/uncommon/griffin2.png", "assets/battledeck/creatures/uncommon/medusa2.png", "assets/battledeck/creatures/uncommon/satyr2.png"],
+      "rare": ["assets/battledeck/creatures/rare/chimera3.png", "assets/battledeck/creatures/rare/harpy3.png", "assets/battledeck/creatures/rare/hydra3.png", "assets/battledeck/creatures/rare/medusa3.png", "assets/battledeck/creatures/rare/pegasus3.png"],
+      "epic": ["assets/battledeck/creatures/epic/centaur4.png", "assets/battledeck/creatures/epic/dryad4.png", "assets/battledeck/creatures/epic/griffin4.png", "assets/battledeck/creatures/epic/minotaur4.png", "assets/battledeck/creatures/epic/pegasus4.png"],
+      "legendary": ["assets/battledeck/creatures/legendary/harpy5.png", "assets/battledeck/creatures/legendary/satyr5.png"],
+      "divine": ["assets/battledeck/creatures/divine/chimera6.png", "assets/battledeck/creatures/divine/griffin6.png"]
+    },
+    "titan": {
+      "common": ["assets/battledeck/titans/common/atlas1.png", "assets/battledeck/titans/common/gaia1.png", "assets/battledeck/titans/common/hyperion1.png", "assets/battledeck/titans/common/kronos1.png", "assets/battledeck/titans/common/phoebe1.png"],
+      "uncommon": ["assets/battledeck/titans/uncommon/kronos2.png", "assets/battledeck/titans/uncommon/perses2.png", "assets/battledeck/titans/uncommon/prometheus2.png", "assets/battledeck/titans/uncommon/themis2.png", "assets/battledeck/titans/uncommon/uranus2.png"],
+      "rare": ["assets/battledeck/titans/rare/atlas3.png", "assets/battledeck/titans/rare/phoebe3.png", "assets/battledeck/titans/rare/prometheus3.png", "assets/battledeck/titans/rare/rhea3.png", "assets/battledeck/titans/rare/uranus3.png"],
+      "epic": ["assets/battledeck/titans/epic/atlas4.png", "assets/battledeck/titans/epic/gaia4.png", "assets/battledeck/titans/epic/perses4.png", "assets/battledeck/titans/epic/rhea4.png", "assets/battledeck/titans/epic/themis4.png"],
+      "legendary": ["assets/battledeck/titans/legendary/gaia5.png", "assets/battledeck/titans/legendary/hyperion5.png"],
+      "divine": ["assets/battledeck/titans/divine/hyperion6.png", "assets/battledeck/titans/divine/prometheus6.png"]
+    },
+    "god": {
+      "common": ["assets/battledeck/gods/common/hades1.png", "assets/battledeck/gods/common/hera1.png", "assets/battledeck/gods/common/hermes1.png", "assets/battledeck/gods/common/pandora1.png", "assets/battledeck/gods/common/poseidon1.png"],
+      "uncommon": ["assets/battledeck/gods/uncommon/artemis2.png", "assets/battledeck/gods/uncommon/hephaestus2.png", "assets/battledeck/gods/uncommon/hera2.png", "assets/battledeck/gods/uncommon/poseidon2.png", "assets/battledeck/gods/uncommon/zeus2.png"],
+      "rare": ["assets/battledeck/gods/rare/artemis3.png", "assets/battledeck/gods/rare/hades3.png", "assets/battledeck/gods/rare/hephaestus3.png", "assets/battledeck/gods/rare/hermes3.png", "assets/battledeck/gods/rare/pandora3.png"],
+      "epic": ["assets/battledeck/gods/epic/aphrodite4.png", "assets/battledeck/gods/epic/artemis4.png", "assets/battledeck/gods/epic/hades4.png", "assets/battledeck/gods/epic/hera4.png", "assets/battledeck/gods/epic/poseidon4.png"],
+      "legendary": ["assets/battledeck/gods/legendary/artemis5.png", "assets/battledeck/gods/legendary/hades5.png"],
+      "divine": ["assets/battledeck/gods/divine/hephaestus6.png", "assets/battledeck/gods/divine/zeus6.png"]
+    }
+  },
+  "inventory_images": [
+    "assets/battledeck/inventory/1.png",
+    "assets/battledeck/inventory/2.png",
+    "assets/battledeck/inventory/3.png",
+    "assets/battledeck/inventory/4.png",
+    "assets/battledeck/inventory/5.png",
+    "assets/battledeck/inventory/6.png"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "warrior": {
+    "items": [
+      "assets/treasures/warrior/crown.png",
+      "assets/treasures/warrior/armor.png",
+      "assets/treasures/warrior/belt.png",
+      "assets/treasures/warrior/cloak.png",
+      "assets/treasures/warrior/shield.png",
+      "assets/treasures/warrior/sword.png"
+    ],
+    "missing": "assets/treasures/warrior/shield.png"
+  },
+  "hero": {
+    "items": [
+      "assets/treasures/hero/helmet.png",
+      "assets/treasures/hero/necklace.png",
+      "assets/treasures/hero/armor.png",
+      "assets/treasures/hero/cape_armor.png",
+      "assets/treasures/hero/garment.png",
+      "assets/treasures/hero/spear.png"
+    ],
+    "missing": "assets/treasures/hero/necklace.png"
+  },
+  "creature": {
+    "items": [
+      "assets/treasures/creature/horns.png",
+      "assets/treasures/creature/head.png",
+      "assets/treasures/creature/wings.png",
+      "assets/treasures/creature/wings_2.png",
+      "assets/treasures/creature/spear.png",
+      "assets/treasures/creature/venom.png"
+    ],
+    "missing": "assets/treasures/creature/wings_2.png"
+  },
+  "titan": {
+    "items": [
+      "assets/treasures/titan/crown.png",
+      "assets/treasures/titan/garment.png",
+      "assets/treasures/titan/wings.png",
+      "assets/treasures/titan/maul.png",
+      "assets/treasures/titan/sphere.png",
+      "assets/treasures/titan/staff.png"
+    ],
+    "missing": "assets/treasures/titan/staff.png"
+  },
+  "god": {
+    "items": [
+      "assets/treasures/god/tiara.png",
+      "assets/treasures/god/armor.png",
+      "assets/treasures/god/garment.png",
+      "assets/treasures/god/trident.png",
+      "assets/treasures/god/arrows.png",
+      "assets/treasures/god/ring.png"
+    ],
+    "missing": "assets/treasures/god/tiara.png"
+  }
+}
