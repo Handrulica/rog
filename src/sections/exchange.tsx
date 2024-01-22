@@ -1,4 +1,4 @@
-import particles from 'public/assets/particles.gif';
+import particles from 'public/assets/components/particles.gif';
 import treasureData from 'public/assets/treasures/assets.json';
 import useDynamicImageType from 'src/hooks/useDynamicImageType';
 import getImageUrl from 'src/utils/getImageUrl';

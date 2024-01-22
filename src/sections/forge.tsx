@@ -1,4 +1,4 @@
-import particles from 'public/assets/particles.gif';
+import particles from 'public/assets/components/particles.gif';
 import useDynamicImageType from 'src/hooks/useDynamicImageType';
 import getImageUrl from 'src/utils/getImageUrl';
 import ImageWithFallback from 'src/components/image';

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "src/components/button";
 import Loop from "src/components/loop";
-import menu from "public/assets/icons/Menu.svg";
+import menu from "public/assets/icons/menu.svg";
 import landingData from "public/assets/landing/assets.json";
 import close from "public/assets/icons/close.svg";
 import { cn } from "src/lib/utils";

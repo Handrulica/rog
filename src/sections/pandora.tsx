@@ -1,5 +1,5 @@
 import React from 'react';
-import particles from "public/assets/particles.gif";
+import particles from "public/assets/components/particles.gif";
 import Separator from "src/components/separator";
 import TreasureData from "public/assets/treasures/assets.json";
 import useElementSize from "src/hooks/useElementSize";

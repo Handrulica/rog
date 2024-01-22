@@ -2,7 +2,7 @@ import React from "react";
 import arrow_left from "public/assets/shrine/arrow_left.svg";
 import arrow_right from "public/assets/shrine/arrow_right.svg";
 import double_headed_arrow from "public/assets/battlecard/double_headed_arrow.svg";
-import particles from "public/assets/particles.gif";
+import particles from "public/assets/components/particles.gif";
 import types from "public/assets/types/types.json";
 import rarities from "public/assets/rarities/rarities.json";
 import BattleCardsData from "public/assets/battlecard/assets.json";
