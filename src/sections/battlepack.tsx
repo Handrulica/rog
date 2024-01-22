@@ -8,7 +8,7 @@ const BattlePack = () => {
 
   return (
     <div id="battlepack_section" className='w-full h-[62rem] sm:h-[88rem] md:h-[117rem] lg:h-[107rem] xl:h-[70rem]'>
-      <div className="bg-center bg-cover bg-no-repeat" style={{backgroundImage: `url(${getImageUrl("../../public/assets/battlepack/background")}.${imageType})`}}>
+      <div className="bg-center bg-cover bg-no-repeat" style={{backgroundImage: `url(${getImageUrl("battlepack/background")}.${imageType})`}}>
         <div className='md:gradient-two'>
           <h1 className='heading-sm sm:heading-md md:heading-lg lg:heading-2lg xl:heading-3lg font-bold text-center text-primary-90'>The Battle Pack</h1>
           <div className='xl:grid xl:grid-cols-2 items-center xl:mt-32'>
@@ -56,7 +56,7 @@ const BattlePack = () => {
         </div>
         <div className='hidden md:block gradient-three w-full lg:h-[6rem] xl:h-[10rem]' />
       </div>
-      <div className="md:bg-none bg-center sm:bg-center bg-cover bg-no-repeat h-fit relative xl:hidden" style={{backgroundImage: `url(${getImageUrl("../../public/assets/battlepack/background")}.${imageType})`}}>
+      <div className="md:bg-none bg-center sm:bg-center bg-cover bg-no-repeat h-fit relative xl:hidden" style={{backgroundImage: `url(${getImageUrl("battlepack/background")}.${imageType})`}}>
         <div className='w-full h-12 bg-neutrals-0' />
         <div className='w-full h-40 sm:h-64 gradient-two' />
         <div className='px-12 w-full absolute top-1'>

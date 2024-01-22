@@ -141,7 +141,7 @@ const BattleCard = () => {
               <div
                 style={{
                   backgroundImage: `url(${getImageUrl(
-                    "../../public/assets/battlecard/background_desktop"
+                    "battlecard/background_desktop"
                   )}.${imageType})`,
                 }}
                 className="w-full h-full flex flex-col justify-between"

@@ -27,7 +27,7 @@ const Forge = () => {
 
   return (
     <div className='w-full'>
-      <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/forge/background")}.${imageType})`}} className="bg-cover bg-center bg-no-repeat">
+      <div style={{backgroundImage: `url(${getImageUrl("forge/background")}.${imageType})`}} className="bg-cover bg-center bg-no-repeat">
         <div className="sm:grid sm:grid-cols-2 sm:pl-12 md:pl-10 sm:gradient-two">
           <div className='sm:pt-20 md:pl-10 sm:mt-6'>
             <h1 className='heading-sm sm:heading-md md:heading-lg lg:heading-2lg xl:heading-3lg font-bold text-center sm:text-left text-primary-90 px-8 sm:px-[0px]'>Hephaestus' Forge</h1>

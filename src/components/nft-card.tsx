@@ -11,19 +11,19 @@ const nftBackground = (variant: string, imageType: string) => {
   switch (variant) {
   case "shrine":
     return `url(${getImageUrl(
-      "../../public/assets/nft_cards_background/shrine_background"
+      "nft_cards_background/shrine_background"
     )}.${imageType})`;
   case "hermes":
     return `url(${getImageUrl(
-      "../../public/assets/nft_cards_background/hermes_background"
+      "nft_cards_background/hermes_background"
     )}.${imageType})`;
   case "hephaestus":
     return `url(${getImageUrl(
-      "../../public/assets/nft_cards_background/hephaestus_background"
+      "nft_cards_background/hephaestus_background"
     )}.${imageType})`;
   default:
     return `url(${getImageUrl(
-      "../../public/assets/nft_cards_background/pandora_background"
+      "nft_cards_background/pandora_background"
     )}.${imageType})`;
   }
 };

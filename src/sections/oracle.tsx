@@ -12,7 +12,7 @@ const Oracle = () => {
       <h2 className="heading-2xxs sm:heading-xs md:heading-md font-bold sm:font-bold text-primary-80 mt-1 text-center sm:mt-2 md:mt-3">
         Master the art of card fusion
       </h2>
-      <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/oracle/background")}.${imageType})`}} className="bg-no-repeat bg-center bg-cover">
+      <div style={{backgroundImage: `url(${getImageUrl("oracle/background")}.${imageType})`}} className="bg-no-repeat bg-center bg-cover">
         <div className="px-5 gradient-two pt-12">
           <p className="body-sm sm:body-md md:body-2dm lg:body-lg text-neutrals-100 md:mt-16 text-center">
             Forge Unstoppable Alliances and Combine Rarities for Devastating

@@ -14,10 +14,10 @@ const ImageWithFallback = React.forwardRef<
   return (
     src &&
     <picture className={wrapperClassName}>
-      <source srcSet={getImageUrl(`../../public/assets/${src}.webp`)} type="image/webp" />
-      <source srcSet={getImageUrl(`../../public/assets/${src}.jp2`)} type="image/jp2" />
-      <source srcSet={getImageUrl(`../../public/assets/${src}.jxr`)} type="image/vnd.ms-photo" />
-      <img src={getImageUrl(`../../public/assets/${src}.png`)} {...props} />
+      <source srcSet={getImageUrl(`${src}.webp`)} type="image/webp" />
+      <source srcSet={getImageUrl(`${src}.jp2`)} type="image/jp2" />
+      <source srcSet={getImageUrl(`${src}.jxr`)} type="image/vnd.ms-photo" />
+      <img src={getImageUrl(`${src}.png`)} {...props} />
     </picture>
   );
 });

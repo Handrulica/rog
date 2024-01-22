@@ -9,7 +9,7 @@ const Exchange = () => {
 
   return (
     <div className='w-full'>
-      <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/exchange/background")}.${imageType})`}} className="bg-cover bg-top bg-no-repeat">
+      <div style={{backgroundImage: `url(${getImageUrl("exchange/background")}.${imageType})`}} className="bg-cover bg-top bg-no-repeat">
         <div className='bg-neutrals-0/50'>
           <div className="sm:bg-none bg-cover bg-top bg-no-repeat">
             <div className='gradient-two grid sm:grid-cols-2 items-center'>

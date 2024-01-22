@@ -14,7 +14,7 @@ const Enchancement = () => {
     <div id="enchantment_section">
       <h1 className='heading-sm sm:heading-md md:heading-lg lg:heading-2lg xl:heading-3lg font-bold text-center text-primary-90'>Enchantment cards</h1>
       <h2 className='heading-2xxs sm:heading-xs md:heading-sm lg:heading-md font-bold text-primary-80 mt-1 text-center sm:mt-2 md:mt-3 px-8'>Enhance your battle cards with potions, scrolls and tomes</h2>
-      <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/enchantment/background")}.${imageType})`}} className="bg-center bg-cover bg-no-repeat mt-8 pb-8">
+      <div style={{backgroundImage: `url(${getImageUrl("enchantment/background")}.${imageType})`}} className="bg-center bg-cover bg-no-repeat mt-8 pb-8">
         <div className='gradient-two sm:pt-12 md:pt-[3.5rem] gradient-two'>
           <p className='body-sm sm:body-md md:body-2md lg:body-lg text-neutrals-100 text-center px-8 sm:px-24 md:px-32 lg:max-w-[60%] xl:max-w-[52%] mx-auto'>
             Infuse your battle cards with enchantments to give your army an extra edge in The Arena!

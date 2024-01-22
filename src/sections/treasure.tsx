@@ -69,7 +69,7 @@ const Treasure = () => {
     <React.Fragment>
       <div
         id="treasure_section"
-        style={{backgroundImage: `url(${getImageUrl("../../public/assets/treasure/background")}.${imageType})`}}
+        style={{backgroundImage: `url(${getImageUrl("treasure/background")}.${imageType})`}}
         className="bg-left bg-no-repeat bg-cover"
       >
         <div className="xl:gradient-two xl:hidden">

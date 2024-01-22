@@ -118,7 +118,7 @@ const Section = ({
           Power
         </span>
         <div className="flex justify-center">
-          <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/battlecard/orb")}.${imageType})`}} className="w-[3.75rem] h-[3.75rem] text-center align-middle bg-contain bg-center bg-no-repeat flex items-center justify-center">
+          <div style={{backgroundImage: `url(${getImageUrl("battlecard/orb")}.${imageType})`}} className="w-[3.75rem] h-[3.75rem] text-center align-middle bg-contain bg-center bg-no-repeat flex items-center justify-center">
             <span className="heading-md text-primary-100 font-bold">
               {
                 BattleCardsData.powerranges[
@@ -130,7 +130,7 @@ const Section = ({
             </span>
           </div>
           <img src={double_headed_arrow} className="mx-2 w-8" />
-          <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/battlecard/orb")}.${imageType})`}} className="w-[3.75rem] h-[3.75rem] text-center align-middle bg-contain bg-center bg-no-repeat flex items-center justify-center">
+          <div style={{backgroundImage: `url(${getImageUrl("battlecard/orb")}.${imageType})`}} className="w-[3.75rem] h-[3.75rem] text-center align-middle bg-contain bg-center bg-no-repeat flex items-center justify-center">
             <span className="heading-md text-primary-100 font-bold">
               {
                 BattleCardsData.powerranges[
@@ -166,7 +166,7 @@ const Shrine = () => {
   };
 
   return (
-    <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/shrine/background")}.${imageType})`}} className="w-full bg-left bg-cover bg-no-repeat">
+    <div style={{backgroundImage: `url(${getImageUrl("shrine/background")}.${imageType})`}} className="w-full bg-left bg-cover bg-no-repeat">
       <div className="gradient-two xl:pb-32">
         <h1 className="heading-sm sm:heading-md md:heading-lg lg:heading-2lg xl:heading-3lg font-bold text-center text-primary-90 px-8">
           The Shrine

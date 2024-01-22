@@ -9,7 +9,7 @@ const Inaugural = () => {
 
   return (
     <div>
-      <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/inaugural/background")}.${imageType})`}} className="w-full bg-center bg-cover bg-no-repeat">
+      <div style={{backgroundImage: `url(${getImageUrl("inaugural/background")}.${imageType})`}} className="w-full bg-center bg-cover bg-no-repeat">
         <div className="md:gradient-two">
           <div className="w-full gradient-two text-center">
             <h1 className="heading-sm sm:heading-md md:heading-lg lg:heading-2lg xl:heading-3lg font-bold text-center text-primary-90 tracking-[0.2rem]">

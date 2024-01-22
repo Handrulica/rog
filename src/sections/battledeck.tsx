@@ -27,7 +27,7 @@ const BattleDeck = () => {
         <div
           style={{
             backgroundImage: `url(${getImageUrl(
-              "../../public/assets/battledeck/background"
+              "battledeck/background"
             )}.${imageType})`,
           }}
           className="bg-no-repeat bg-center bg-cover"
@@ -116,7 +116,7 @@ const BattleDeck = () => {
       <div
         style={{
           backgroundImage: `url(${getImageUrl(
-            "../../public/assets/battledeck/background"
+            "battledeck/background"
           )}.${imageType})`,
         }}
         className="hidden xl:block bg-no-repeat bg-center bg-cover"

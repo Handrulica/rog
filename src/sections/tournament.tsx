@@ -225,7 +225,7 @@ const Tournament = () => {
       <p className="text-primary-80 font-bold text-center heading-xxs xl:heading-xs xl:heading-sm px-8 mt-2">
         the weekly tournaments bring immense rewards! conquer the masses
       </p>
-      <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/tournament/background")}.${imageType})`}} className="bg-no-repeat bg-center bg-cover">
+      <div style={{backgroundImage: `url(${getImageUrl("tournament/background")}.${imageType})`}} className="bg-no-repeat bg-center bg-cover">
         <div className="bg-neutrals-0/30">
           <div className="pt-12 px-4 gradient-two">
             <p className="text-neutrals-100 text-center body-sm sm:text-[14px] xl:text-[20px] px-3 xl:leading-8">

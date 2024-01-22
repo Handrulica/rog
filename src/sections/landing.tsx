@@ -100,7 +100,7 @@ export const Landing = () => {
 
   return (
     <div id="landing_section">
-      <div className="bg-left-top bg-cover bg-no-repeat h-fit" style={{backgroundImage: `url(${getImageUrl("../../public/assets/landing/background")}.${imageType})`}}>
+      <div className="bg-left-top bg-cover bg-no-repeat h-fit" style={{backgroundImage: `url(${getImageUrl("landing/background")}.${imageType})`}}>
         <div className="bg-neutrals-0/30  px-4 py-3 flex justify-start flex-row text-primary-90 font-bold heading-2xxs lg:heading-xs lg:font-bold lg:px-12 lg:mb-10 lg:pt-10">
           <button
             className="mr-4 lg:mr-5 "
@@ -117,7 +117,7 @@ export const Landing = () => {
                   "fixed overflow-hidden z-[9999]  top-[0px] right-[0px] bottom-[0px] w-[100vw] h-[100vh] bg-right-top bg-cover bg-no-repeat menu",
                   showMenu ? "menu_open" : "menu_close"
                 )}
-                style={{backgroundImage: `url(${getImageUrl("../../public/assets/landing/background")}.${imageType})`}}
+                style={{backgroundImage: `url(${getImageUrl("landing/background")}.${imageType})`}}
               >
                 <div className="bg-neutrals-5/50 h-full">
                   <div className="px-4 py-3 flex flex-row-reverse justify-end lg:justify-end lg:flex-row-reverse text-primary-90 font-bold heading-2xxs lg:heading-xs lg:font-bold items-center lg:px-12 lg:py-10">

@@ -22,7 +22,7 @@ const Roadmap = () => {
       <div>
         <div className="relative w-full">
           <div className="absolute w-full h-full grid grid-cols-1 md:grid-cols-2 blur-[1px] z-0">
-            <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/roadmap/background")}.${imageType})`}} className="w-full bg-right bg-cover bg-no-repeat" />
+            <div style={{backgroundImage: `url(${getImageUrl("roadmap/background")}.${imageType})`}} className="w-full bg-right bg-cover bg-no-repeat" />
           </div>
           <div className="relative sm:w-fit mx-auto">
             {RoadmapData.map((entry, index) => {

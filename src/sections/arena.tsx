@@ -80,10 +80,10 @@ const Arena = () => {
         style={{
           backgroundImage: isBelowMd
             ? `url("${getImageUrl(
-              "../../public/assets/arena/background_mobile"
+              "arena/background_mobile"
             )}.${imageType}")`
             : `url("${getImageUrl(
-              "../../public/assets/arena/background_mobile"
+              "arena/background_mobile"
             )}.${imageType}")`,
         }}
         className={`bg-top-left sm:bg-left xl:bg-center bg-cover bg-no-repeat h-fit relative`}

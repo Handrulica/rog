@@ -18,7 +18,7 @@ const Pandora = () => {
   return (
 
     <div className="mt-16">
-      <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/pandora/background")}.${imageType})`}} className="bg-cover bg-center bg-no-repeat">
+      <div style={{backgroundImage: `url(${getImageUrl("pandora/background")}.${imageType})`}} className="bg-cover bg-center bg-no-repeat">
         <div className="gradient-two grid sm:grid-cols-2 items-center">
           <div className="sm:mt-32 sm:pl-10 lg:pl-24">
             <h1 className="heading-sm sm:heading-md md:heading-lg lg:heading-2lg xl:heading-3lg lg:max-w-md font-bold text-center sm:text-left sm:tracking-wide text-primary-90 px-8">
@@ -66,7 +66,7 @@ const Pandora = () => {
             )}
             style={{ width: `${width}px` }}
           >
-            <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/pandora/header")}.${imageType})`}} className="w-[11.25rem] h-[3.25rem] absolute bg-no-repeat bg-center bg-cover flex items-center justify-center mx-auto">
+            <div style={{backgroundImage: `url(${getImageUrl("pandora/header")}.${imageType})`}} className="w-[11.25rem] h-[3.25rem] absolute bg-no-repeat bg-center bg-cover flex items-center justify-center mx-auto">
               <span className="block text-neutrals-100 font-bold heading-2xxs">
                 Armory
               </span>
@@ -137,7 +137,7 @@ const Pandora = () => {
             )}
             style={{ width: `${pandoraWidth}px` }}
           >
-            <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/pandora/header")}.${imageType})`}} className="w-[13.25rem] h-[3.8rem] absolute bg-no-repeat bg-center bg-cover flex items-center justify-center">
+            <div style={{backgroundImage: `url(${getImageUrl("pandora/header")}.${imageType})`}} className="w-[13.25rem] h-[3.8rem] absolute bg-no-repeat bg-center bg-cover flex items-center justify-center">
               <span className="block text-neutrals-100 font-bold heading-2xxs">
                 Pandora's box
               </span>

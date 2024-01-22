@@ -11,7 +11,7 @@ const Nfts = () => {
 
   return (
     <div id='nfts_section' className="mb-12">
-      <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/nfts/background")}.${imageType})`}} className="bg-no-repeat bg-cover bg-right">
+      <div style={{backgroundImage: `url(${getImageUrl("nfts/background")}.${imageType})`}} className="bg-no-repeat bg-cover bg-right">
         <div className='w-full gradient-two pb-20 sm:pb-24 md:pb-32'>
           <div className='w-fit mx-auto'>
             <span className='block font-heading text-[0.625rem] sm:heading-3xxs md:heading-xs lg:heading-md text-neutrals-100 font-bold sm:font-normal'>Explore</span>
