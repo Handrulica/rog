@@ -34,7 +34,7 @@ const TeamMember: React.FC<TeamMemberProps & { index: number }> = (props) => {
             {name}
           </h3>
           <div className="w-[8.56rem] h-[9rem] relative">
-            <img src={image} alt="profile_photo" className="w-full h-full" />
+            <img src={image} alt="profile_photo" className="w-full h-full rounded" />
             <div className="absolute z-30 gradient-three w-full h-[50%] bottom-[0px]" />
           </div>
           <p className="text-primary-90 body-xs pr-12 mt-5">{description}</p>
@@ -62,11 +62,11 @@ const TeamMember: React.FC<TeamMemberProps & { index: number }> = (props) => {
               index % 2 === 1 ? "flex flex-row-reverse" : "flex"
             )}
           >
-            <div className="w-[14.56rem] h-[14.25rem] xl:w-[27.81rem] xl:h-[29.18rem]  shrink-0 relative">
+            <div className="w-[14.56rem] h-[14.25rem] xl:w-[27.81rem] xl:h-[29.18rem]  shrink-0 relative rounded">
               <img
                 src={image}
                 alt="profile_photo"
-                className="w-full h-full"
+                className="w-full h-full rounded"
               />
               <div className="absolute z-30 gradient-three w-full h-[50%] bottom-[0px]" />
             </div>

@@ -1,31 +1,31 @@
 {
   "warrior": {
-    "default": "assets/types/warrior_grey.png",
-    "selected": "assets/types/warrior.png",
+    "default": "types/warrior_grey",
+    "selected": "types/warrior",
     "plural": "warriors",
     "description": "Warrior cards represent brave fighters and form the foundation of your battle deck. \n They are the initial category you'll encounter and serve as reliable frontline combatants."
   },
   "hero": {
-    "default": "assets/types/hero_grey.png",
-    "selected": "assets/types/hero.png",
+    "default": "types/hero_grey",
+    "selected": "types/hero",
     "plural": "heroes",
     "description": "Heroes are legendary figures renowned for their exceptional abilities and noble deeds. \n These champions excel in combat, displaying unmatched skill and prowes."
   },
   "creature": {
-    "default": "assets/types/creature_grey.png",
-    "selected": "assets/types/creature.png",
+    "default": "types/creature_grey",
+    "selected": "types/creature",
     "plural": "creatures",
     "description": "Creature cards feature powerful and ferocious mythical creatures in Realms of Glory. \n They bring strength and wildness to your deck, capable of overwhelming opponents."
   },
   "titan": {
-    "default": "assets/types/titan_grey.png",
-    "selected": "assets/types/titan.png",
+    "default": "types/titan_grey",
+    "selected": "types/titan",
     "plural": "titans",
     "description": "Titan cards showcase mythical Greek Titans with immense power. \n They possess overwhelming strength, capable of decimating opponents in battles. "
   },
   "god": {
-    "default": "assets/types/god_grey.png",
-    "selected": "assets/types/god.png",
+    "default": "types/god_grey",
+    "selected": "types/god",
     "plural": "gods",
     "description": "God cards represent divine entities with unparalleled power and supremacy. \n They are the epitome of strength, reshaping the course of battles."
   }

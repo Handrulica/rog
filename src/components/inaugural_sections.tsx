@@ -37,7 +37,7 @@ const InauguralSections: React.FC = () => {
       <div id="pandora">
         {isNftSelected("pandora") && (
           <>
-            <Separator size="small" className="mt-24 mb-3" />
+            <Separator size="small" className="mt-12 mb-3" />
             <Pandora />
           </>
         )}

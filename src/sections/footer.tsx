@@ -12,7 +12,7 @@ const Footer = () => {
             The Battle Deck
           </a>
           <a href="#arena_section" className="text-primary-95 font-bold heading-xxs">The Arena</a>
-          <a href="#nfts_section_two" className="text-primary-95 font-bold heading-xxs">Treasure Hunt</a>
+          <a href="#treasure_section" className="text-primary-95 font-bold heading-xxs">Treasure Hunt</a>
           <a href="#tournament_section" className="text-primary-95 font-bold heading-xxs">
             Tournament
           </a>
@@ -27,7 +27,7 @@ const Footer = () => {
           <a href="#enchantment_section" className="text-primary-95 font-bold heading-xxs">
             Enchantment Cards
           </a>
-          <a href="#nfts_section_two" className="text-primary-95 font-bold heading-xxs">Unique Cards</a>
+          <a href="#treasure_section" className="text-primary-95 font-bold heading-xxs">Treasure Cards</a>
           <a href="#nfts_section" className="text-primary-95 font-bold heading-xxs">Nft Cards</a>
         </div>
         <div className="flex flex-col space-y-4">
@@ -40,20 +40,20 @@ const Footer = () => {
         </div>
         <div className="flex flex-col space-y-4">
           <h2 className="text-primary-90 font-bold heading-2xxs">Legal</h2>
-          <a className="text-primary-95 font-bold heading-xxs">
+          <a href="/terms-and-conditions" className="text-primary-95 font-bold heading-xxs">
             Terms and Conditions
           </a>
-          <a className="text-primary-95 font-bold heading-xxs">
+          <a href="/privacy-policy" className="text-primary-95 font-bold heading-xxs">
             Privacy Policy
           </a>
-          <a className="text-primary-95 font-bold heading-xxs">
+          <a href="/copyright" className="text-primary-95 font-bold heading-xxs">
             Copyright Notice
           </a>
         </div>
       </div>
       <div className="border-t-solid border-t-[1px] border-t-neutrals-40 mt-24 pt-8 sm:flex sm:flex-row-reverse items-center justify-between">
         <div className="grid grid-cols-1 lg:grid-cols-2 w-fit items-center">
-          <a href="mailto:contact@realmsofglory.io" className="text-neutrals-100 font-bold heading-xxs mt-5 sm:mt-[0px] block lg:mr-8">
+          <a href="mailto:contact@realmsofglory.io" className="text-neutrals-100 font-bold heading-xxs mb-6 sm:mb-[0px] sm:mt-[0px] block lg:mr-8">
             contact@realmsofglory.io
           </a>
           <div className="flex gap-5">
@@ -61,10 +61,10 @@ const Footer = () => {
               <img src={discord} alt="discord" />
             </a>
             <a href="https://t.me/realmsofglory" target="_blank">
-              <img src={telegram} alt="discord" />
+              <img src={telegram} alt="telegram" />
             </a>
             <a href="https://twitter.com/realmsofglory_" target="_blank">
-              <img src={twitter} alt="discord" />
+              <img src={twitter} alt="twitter" />
             </a>
           </div>
         </div>

@@ -1,20 +1,24 @@
 import React from 'react';
 import particles from "public/assets/particles.gif";
-import nft from "public/assets/pandora/nft.png";
 import Separator from "src/components/separator";
 import TreasureData from "public/assets/treasures/assets.json";
 import useElementSize from "src/hooks/useElementSize";
-import symbols from "public/assets/treasures/icons.json";
+import symbols from "public/assets/types/types.json";
 import { cn } from "src/lib/utils";
+import useDynamicImageType from 'src/hooks/useDynamicImageType';
+import getImageUrl from 'src/utils/getImageUrl';
+import ImageWithFallback from 'src/components/image';
 
 const Pandora = () => {
+  const imageType = useDynamicImageType();
   const [pandoraRef, { width: pandoraWidth }] = useElementSize();
   const [selectedKeySet, setSelectedKeySet] = React.useState<keyof typeof TreasureData>('warrior');
   const [armoryRef, {width}] = useElementSize();
 
   return (
-    <div className="mt-32">
-      <div className="sm:bg-[url('public/assets/pandora/background.png')] bg-cover bg-center bg-no-repeat">
+
+    <div className="mt-16">
+      <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/pandora/background")}.${imageType})`}} className="bg-cover bg-center bg-no-repeat">
         <div className="gradient-two grid sm:grid-cols-2 items-center">
           <div className="sm:mt-32 sm:pl-10 lg:pl-24">
             <h1 className="heading-sm sm:heading-md md:heading-lg lg:heading-2lg xl:heading-3lg lg:max-w-md font-bold text-center sm:text-left sm:tracking-wide text-primary-90 px-8">
@@ -32,16 +36,16 @@ const Pandora = () => {
             <img
               src={particles}
               alt="particles"
-              className="absolute w-[100%] lg:w-[34rem] lg:h-[36rem] translate-x-48 mt-32 lg:mt-10"
+              className="absolute w-[100%] h-[28rem] lg:w-[34rem] lg:h-[36rem] xl:translate-x-48 mt-32 lg:mt-10"
             />
-            <img
-              src={nft}
+            <ImageWithFallback
+              src='pandora/nft'
               alt="pandora"
-              className="w-[13.75rem] h-[17.62rem] lg:w-[24rem] lg:h-[30rem] mx-auto translate-y-[15rem] sm:translate-y-[8rem] relative"
+              className="w-[13.75rem] h-[17.62rem] lg:w-[24rem] lg:h-[30rem] mx-auto translate-y-[15rem] sm:translate-y-[8rem] relative rounded-[3.2rem]"
             />
           </div>
         </div>
-        <div className="bg-[url('public/assets/pandora/background.png')] sm:bg-none bg-cover bg-center bg-no-repeat">
+        <div className="sm:bg-none bg-cover bg-center bg-no-repeat">
           <div className="py-24 gradient-two sm:bg-none" />
           <p className="gradient-three text-center text-primary-85 font-bold heading-xs px-16 pt-64 sm:hidden">
             a powerful helping hand in your treasure hunt quests!
@@ -58,11 +62,11 @@ const Pandora = () => {
         >
           <div
             className={cn(
-              "absolute flex justify-center text-center top-[-2.2rem] h-fit z-10 -ml-4"
+              "absolute flex justify-center text-center top-[-2.2rem] h-fit z-10 -translate-x-[16px]"
             )}
-            style={{ width: `${pandoraWidth}px` }}
+            style={{ width: `${width}px` }}
           >
-            <div className="w-[11.25rem] h-[3.25rem] absolute bg-[url('public/assets/pandora/header.png')] bg-no-repeat bg-center bg-cover flex items-center justify-center">
+            <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/pandora/header")}.${imageType})`}} className="w-[11.25rem] h-[3.25rem] absolute bg-no-repeat bg-center bg-cover flex items-center justify-center mx-auto">
               <span className="block text-neutrals-100 font-bold heading-2xxs">
                 Armory
               </span>
@@ -78,8 +82,8 @@ const Pandora = () => {
                     setSelectedKeySet(key as keyof typeof TreasureData)
                   }
                 >
-                  <img
-                    src={symbols[key as keyof typeof symbols]}
+                  <ImageWithFallback
+                    src={symbols[key as keyof typeof symbols].selected}
                     alt={`treasure_${key}_icon`}
                     className={cn(
                       "w-8 h-8 sm:w-10 sm:h-10 md:w-12 sm:h-12",
@@ -90,15 +94,15 @@ const Pandora = () => {
               ))}
             </div>
           </div>
-          <div className="grid grid-cols-2 w-fit mx-auto pt-4 gap-x-12 gap-y-8 xl:pb-8 px-12">
+          <div className="grid grid-cols-2 w-fit mx-auto pt-4 gap-x-6 gap-y-4 md:gap-x-12 md:gap-y-8 xl:pb-8 md:px-12">
             {TreasureData[selectedKeySet].items.map((image, index) => (
-              <img
+              <ImageWithFallback
                 key={index}
                 src={image}
                 alt={`${selectedKeySet}_item_${index}`}
                 className={cn(
                   "rounded-xs w-[5.625rem] md:w-[7.5rem] h-[7.2rem] md:h-[9.5rem]",
-                  image === TreasureData[selectedKeySet].missing && "saturate-0"
+                  image === TreasureData[selectedKeySet].missing && "saturate-0 evolved_white"
                 )}
               />
             ))}
@@ -114,34 +118,34 @@ const Pandora = () => {
           <h1 className="heading-sm sm:heading-md font-bold sm:font-bold text-primary-85 text-center px-8">
             open box
           </h1>
-          <p className="text-neutrals-100 text-center body-sm font-light px-12 sm:px-20 lg:px-20 mt-4">
+          <p className="text-neutrals-100 text-center body-sm font-light px-12 sm:px-20 lg:px-14 xl:px-16 2xl:px-16 mt-4">
             Pandora will give you the chance to open the mystery box and search
             through all the treasures of the Realms.
           </p>
-          <p className="text-neutrals-100 text-center font-bold sm:font-bold heading-2xxs sm:heading-sm px-12 mt-4 sm:mt-8 xl:px-24">
-            Pick any Missing Card and complete your Elusive Set!
+          <p className="text-neutrals-100 text-center font-bold sm:font-bold heading-2xxs sm:heading-sm px-10 mt-4 sm:mt-8 lg:px-4 2xl:px-16">
+            Pick the Missing Card and complete your Alliance Set!
           </p>
-          <p className="hidden sm:block text-neutrals-100 text-center font-bold sm:font-bold heading-2xxs sm:heading-sm px-12 mt-4 xl:px-20 xl:mt-16">
+          <p className="hidden sm:block text-neutrals-100 text-center font-bold sm:font-bold heading-2xxs sm:heading-sm px-12 mt-4 lg:px-2 2xl:px-20 xl:mt-16">
             There is a risk involved, but{" "}
             <span className="text-green-30">the reward</span> is huge!
           </p>
         </div>
-        <div className="double_border m-8 mt-20 pt-5  pb-5 sm:mt-32 xl:mt-[0px] sm:w-fit max-w-sm xl:max-w-none mx-10 sm:px-20 mx-auto sm:mx-auto">
+        <div className="double_border m-8 mt-20 pt-5 pb-5 sm:mt-32 xl:mt-[0px] sm:w-fit max-w-sm xl:max-w-none mx-10 sm:px-16 mx-auto sm:mx-auto">
           <div
             className={cn(
               "absolute flex justify-center text-center top-[-2.2rem] h-[10rem] z-30 sm:-ml-20"
             )}
-            style={{ width: `${width}px` }}
+            style={{ width: `${pandoraWidth}px` }}
           >
-            <div className="w-[13.25rem] h-[3.8rem] absolute bg-[url('public/assets/pandora/header.png')] bg-no-repeat bg-center bg-cover flex items-center justify-center">
+            <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/pandora/header")}.${imageType})`}} className="w-[13.25rem] h-[3.8rem] absolute bg-no-repeat bg-center bg-cover flex items-center justify-center">
               <span className="block text-neutrals-100 font-bold heading-2xxs">
                 Pandora's box
               </span>
             </div>
           </div>
           <div className="mt-8 z-30">
-            <img
-              src={symbols[selectedKeySet]}
+            <ImageWithFallback
+              src={symbols[selectedKeySet].selected}
               className="w-8 h-8 lg:w-12 lg:h-12 mx-auto"
               alt="treasure_wizard_icon"
             />
@@ -149,9 +153,9 @@ const Pandora = () => {
           <div className="relative">
             <div className="mt-4 pt-4 relative">
               <div className="flex">
-                <img
+                <ImageWithFallback
                   src={TreasureData[selectedKeySet].missing}
-                  className="rounded w-[11.25rem] sm:h-[14rem] md:w-[12.5rem] md:h-[16.25rem] sm:h-[15.4rem] md:h-[19.81rem] lg:w-[17.18rem] lg:h-[22.75rem] mx-auto evolved_green"
+                  className="rounded w-[11.25rem] sm:h-[14rem] md:w-[12.5rem] md:h-[16.25rem] sm:h-[15.4rem] md:h-[19.81rem] lg:w-[18.18rem] lg:h-[22.75rem] mx-auto evolved_green"
                   alt="treasure_wizar_orb"
                 />
               </div>

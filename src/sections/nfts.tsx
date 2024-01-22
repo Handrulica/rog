@@ -2,15 +2,20 @@ import Loop from "src/components/loop";
 import nftsData from 'public/assets/nfts/assets.json';
 import NftCard from "src/components/nft-card";
 import Separator from "src/components/separator";
+import ImageWithFallback from "src/components/image";
+import useDynamicImageType from "src/hooks/useDynamicImageType";
+import getImageUrl from "src/utils/getImageUrl";
 
 const Nfts = () => {
+  const imageType = useDynamicImageType();
+
   return (
     <div id='nfts_section' className="mb-12">
-      <div className="bg-[url('public/assets/nfts/background.png')] bg-no-repeat bg-cover bg-right">
+      <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/nfts/background")}.${imageType})`}} className="bg-no-repeat bg-cover bg-right">
         <div className='w-full gradient-two pb-20 sm:pb-24 md:pb-32'>
           <div className='w-fit mx-auto'>
             <span className='block font-heading text-[0.625rem] sm:heading-3xxs md:heading-xs lg:heading-md text-neutrals-100 font-bold sm:font-normal'>Explore</span>
-            <h1 className='block font-heading text-[1.375rem] sm:heading-lg md:heading-2lg lg:heading-xl xl:heading-2xl text-primary-90 font-bold sm:font-bold'>Reals of Glory NFTs</h1>
+            <h1 className='block font-heading text-[1.375rem] sm:heading-lg md:heading-2lg lg:heading-xl xl:heading-2xl text-primary-90 font-bold sm:font-bold'>Realms of Glory NFTs</h1>
             <span className='block text-right font-heading text-[0.625rem] sm:heading-3xxs md:heading-xs lg:heading-sm font-bold sm:font-bold text-accent'>Limited Edition Utility Cards</span>
           </div>
         </div>
@@ -18,13 +23,13 @@ const Nfts = () => {
           <Loop direction='left' speed={30}>
             {
               nftsData.images.map((image, index) =>
-                <img key={index} src={image} alt={`nft_card_1`} className='w-[7.5rem] h-[9.68rem] sm:w-[8.75rem] sm:h-[11.2rem] md:w-40 md:h-[13rem] md:w-[13.75rem] md:h-[17.75rem] mx-3  rounded' />
+                <ImageWithFallback key={index} src={image} alt={`nft_card`} className='w-[7.5rem] h-[9.68rem] sm:w-[8.75rem] sm:h-[11.2rem] md:w-40 md:h-[13rem] md:w-[13.75rem] md:h-[17.75rem] mx-3  rounded-[0.5rem]' />
               )
             }
           </Loop>
           <div id="nfts_section_two" className='px-10 pt-16 sm:pt-20 md:pt-24 lg:pt-32 xl:pt-40 pb-4 sm:pb-8 md:pb-16 gradient-one'>
             <Separator size='small'/>
-            <p className='heading-xs md:heading-sm font-bold text-primary-85 text-center sm:max-w-md md:max-w-lg mx-auto mt-2'><span className='text-neutrals-100'>Stake</span> Realms of Glory NFTs for Exclusive Battles Benefits and Epic Rewards</p>
+            <p className='heading-xs md:heading-sm font-bold text-primary-85 text-center sm:max-w-md md:max-w-lg mx-auto mt-2 md:mt-16'><span className='text-neutrals-100'>Stake</span> Realms of Glory NFTs for Exclusive Battles Benefits and Epic Rewards</p>
           </div>
         </div>
 

@@ -1,26 +1,42 @@
 {
   "denis": {
-    "role": "FOUNDER AND PROJECT MANAGER",
+    "role": "Founder & Project Manager",
     "name": "Denis Ciupag",
-    "image": "/assets/team/pictures/denis.png",
-    "description": "Develop a consistent art style that complements the game's theme and enhances the player experience \n Design over 350 cards of iconic characters and creatures \n Create captivating environments and illustrations to bring the world of Realms of Glory to life. \n",
+    "image": "team/pictures/denis",
+    "description": "Denis, the driving force behind Realms of Glory, has been a passionate blockchain enthusiast since 2017. Known for his meticulous attention to detail and exceptional project management skills, Denis excels in delivering projects that not only work but thrive. Driven by the belief that gaming should offer substantial real-world value for the time and dedication players invest, he has crafted Realms of Glory to embody this philosophy. \n \n  Besides leading Realms of Glory, Denis is also the visionary behind Raffle Word, an innovative project set to transform the crypto prizes sector. His passion for blending the gaming world with real value is what sets him apart in the blockchain community.",
     "twitter": "https://twitter.com/ssensix11",
     "linkedin": "https://www.linkedin.com/in/denis-ciupag-26a826197/"
   },
-  "Alex": {
+  "alex": {
     "role": "Co-Founder & CTO",
     "name": "Alexandru Gazdac",
-    "image": "/assets/team/pictures/alex.png",
-    "description": "Description goes here, description goes here, description goes, \n here, description goes here, description goes here. Description \n goes here, description goes here, description goes, here, description goes here, description goes here.",
+    "image": "team/pictures/alex",
+    "description": "As the CTO and Co-Founder of Realms of Glory, Alex brings a wealth of expertise from the sofwtare development with a special focus on blockchain technology. Known for creating innovative blockchain solutions and adept in building both centralized and decentralized applications, he is a driving force in the tech space. Driven by a passion for transformative technology, he is committed to applying his extensive blockchain knowledge to empower forward-thinking organizations and startups. \n \n Alongside his pivotal role at Realms of Glory, Alex co-founded APE Consulting, further showcasing his commitment to advancing blockchain technology in various sectors.",
     "twitter": "https://twitter.com/AlexandruGazda1",
     "linkedin": "https://www.linkedin.com/in/alexandru-gazdac/"
   },
   "iulia": {
     "role": "UI / UX Designer",
     "name": "Iulia Toma",
-    "image": "assets/team/pictures/iulia.png",
-    "description": "Description goes here, description goes here, description goes, \n here, description goes here, description goes here. Description \n goes here, description goes here, description goes, here, description goes here, description goes here.",
+    "image": "team/pictures/iulia",
+    "description": "Iulia, the UI/UX Designer for Realms of Glory, whose exceptional talent in web design has marked her as a rising star in the industry. Combining her skills as a licensed psychologist with her design expertise, she has a unique ability to craft immersive worlds that deeply engage players. Her understanding of player psychology is evident in the intuitive and captivating interfaces she creates, enhancing the overall gaming experience in Realms of Glory. \n \n Her sincere commitment to Realms of Glory reflects not just in her work but also in her belief that the game is genuinely outstanding and transformative in the gaming world.",
     "twitter": "",
     "linkedin": "https://www.linkedin.com/in/iulia-toma-986a19177/"
+  },
+  "pedro": {
+    "role": "Graphic Designer & Illustrator",
+    "name": "Pedro Zalba",
+    "image": "team/pictures/pedro",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/pedrozalba/",
+    "description": "Pedro, the card designer for Realms of Glory, brings an impressive portfolio to the table, having worked on over 200 Trading Card Games (TCG) projects. His expertise spans across graphic design, game development, and user interface, ensuring that each card is not just a visual delight but also a meaningful element in the game's ecosystem."
+  },
+  "elod": {
+    "role": "Advisor",
+    "name": "Elod Varga",
+    "image": "team/pictures/elod",
+    "twitter": "https://twitter.com/VargaElod4",
+    "linkedin": "https://www.linkedin.com/in/vargaelod/",
+    "description": "As an advisor for Realms of Glory, Elod brings a unique blend of entrepreneurial insight and deep technical expertise. CEO of Ape Consulting and Lara(Taraxa Liquid Staking), protocol & ecosystem developer at Taraxa.io, he's aiming to scale and drive dev adoption, focusing on creating user-centric blockchain solutions that are both innovative and accessible. \n \n Seasoned entrepreneur who developed and launched multiple decentralized protocols within multiple blockchain ecosystems and member of Transylvania Angels Network, makes him an invaluable asset to the Realms of Glory team, guiding the project with both technical acumen and business savvy."
   }
 }

@@ -1,15 +1,17 @@
 import particles from 'public/assets/particles.gif';
-import hermes from 'public/assets/exchange/hermes.png';
 import treasureData from 'public/assets/treasures/assets.json';
-import card_back from 'public/assets/exchange/card_back.png';
-import rotating_arrows from 'public/assets/exchange/rotating_arrows.png';
+import useDynamicImageType from 'src/hooks/useDynamicImageType';
+import getImageUrl from 'src/utils/getImageUrl';
+import ImageWithFallback from 'src/components/image';
 
 const Exchange = () => {
+  const imageType = useDynamicImageType();
+
   return (
     <div className='w-full'>
-      <div className="sm:bg-[url('public/assets/exchange/background.png')] bg-cover bg-top bg-no-repeat">
+      <div style={{backgroundImage: `url(${getImageUrl("../../public/assets/exchange/background")}.${imageType})`}} className="bg-cover bg-top bg-no-repeat">
         <div className='bg-neutrals-0/50'>
-          <div className="bg-[url('public/assets/exchange/background.png')] sm:bg-none bg-cover bg-top bg-no-repeat">
+          <div className="sm:bg-none bg-cover bg-top bg-no-repeat">
             <div className='gradient-two grid sm:grid-cols-2 items-center'>
               <div className='sm:mt-32 sm:pl-10 lg:mt-2 lg:pl-20 lg:pr-10 lg:max-w-2xl'>
                 <h1 className='heading-sm sm:heading-md md:heading-lg lg:heading-2lg xl:heading-3lg font-bold sm:font-bold md:font-bold text-center sm:text-left sm:tracking-wide text-primary-90 px-8'>hermes’ unique exchange</h1>
@@ -20,7 +22,7 @@ const Exchange = () => {
               <div className='relative'>
                 <div className='bg-primary-30 absolute w-[50%] h-[100%] top-24 left-[25%] blur-[100px]' />
                 <img src={particles} alt='particles' className='absolute w-[20.75rem] lg:w-[28.62rem] lg:h-[35.93rem] h-[20.62rem] left-[10%] sm:left-[0%] md:left-[10%] top-[10%] lg:top-[0%] xl:translate-x-32' />
-                <img src={hermes} alt='hades' className='w-[13.75rem] h-[17.62rem] lg:w-[21.62rem] lg:h-[27.93rem] mx-auto translate-y-24 relative rounded-[1.5rem]' />
+                <ImageWithFallback src='exchange/hermes' alt='hades' className='w-[13.75rem] h-[17.62rem] lg:w-[21.62rem] lg:h-[27.93rem] mx-auto translate-y-24 relative rounded-[1.5rem]' />
               </div>
             </div>
             <div className='pt-48 gradient-three sm:bg-none lg:hidden'>
@@ -36,18 +38,18 @@ const Exchange = () => {
             <div>
               <span className='block text-center font-bold text-neutrals-100 heading-sm lg:heading-2md mt-12 lg:mt-[0px]'>ARMORY</span>
               <div className='grid grid-cols-4 gap-3 w-fit mx-auto mt-8'>
-                <img src={treasureData.warrior.items[3]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='gladiator_shield' />
-                <img src={treasureData.warrior.items[0]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='gladiator_helmet' />
-                <img src={treasureData.hero.items[4]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='dwarf_ale' />
-                <img src={treasureData.hero.items[0]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='dwarf_helmet' />
-                <img src={treasureData.creature.items[4]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs evolved_blue' alt='archmage_wand' />
-                <img src={treasureData.creature.items[1]} className='w-[4.375rem]sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='dwarf_cape' />
-                <img src={treasureData.god.items[5]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='wizard_staff' />
-                <img src={treasureData.god.items[3]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='wizard_ring' />
-                <img src={treasureData.titan.items[4]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='druid_staff' />
-                <img src={treasureData.titan.items[1]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='druid_sandals' />
-                <img src={treasureData.titan.items[2]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='druid_ring' />
-                <img src={treasureData.titan.items[0]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='druid_robe' />
+                <ImageWithFallback src={treasureData.warrior.items[3]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='gladiator_shield' />
+                <ImageWithFallback src={treasureData.warrior.items[0]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='gladiator_helmet' />
+                <ImageWithFallback src={treasureData.hero.items[4]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='dwarf_ale' />
+                <ImageWithFallback src={treasureData.hero.items[0]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='dwarf_helmet' />
+                <ImageWithFallback src={treasureData.creature.items[4]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs evolved_blue' alt='archmage_wand' />
+                <ImageWithFallback src={treasureData.creature.items[1]} className='w-[4.375rem]sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='dwarf_cape' />
+                <ImageWithFallback src={treasureData.god.items[5]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='wizard_staff' />
+                <ImageWithFallback src={treasureData.god.items[3]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='wizard_ring' />
+                <ImageWithFallback src={treasureData.titan.items[4]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='druid_staff' />
+                <ImageWithFallback src={treasureData.titan.items[1]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='druid_sandals' />
+                <ImageWithFallback src={treasureData.titan.items[2]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='druid_ring' />
+                <ImageWithFallback src={treasureData.titan.items[0]} className='w-[4.375rem] sm:w-[6.32rem] md:w-[7.48rem] h-[5.625rem] sm:h-[7.5rem] md:h-[9.5rem] rounded-xs' alt='druid_robe' />
               </div>
             </div>
           </div>
@@ -67,9 +69,9 @@ const Exchange = () => {
           </p>
         </div>
         <div className='flex justify-center items-center space-x-8 mt-12'>
-          <img src={treasureData.titan.items[5]} alt='rider_card' className='w-[6.25rem] h-[8.125rem] lg:w-[10.31rem] lg:h-[13rem] xl:w-[12.31rem] xl:h-[15rem] rounded-xs evolved_blue' />
-          <img src={rotating_arrows} className='w-[2.875rem] h-[3.625rem] rotating_arrows' />
-          <img src={card_back} alt='rider_card' className='w-[6.25rem] h-[8.125rem] rounded-xs lg:w-[10.31rem] lg:h-[13rem] xl:w-[12.31rem] xl:h-[15rem]' />
+          <ImageWithFallback src={treasureData.creature.items[4]} alt='rider_card' className='w-[6.25rem] h-[8.125rem] lg:w-[10.31rem] lg:h-[13rem] xl:w-[12.31rem] xl:h-[15rem] rounded-xs evolved_blue' />
+          <ImageWithFallback src='exchange/rotating_arrows' className='w-[2.875rem] h-[3.625rem] rotating_arrows' />
+          <ImageWithFallback src='exchange/card_back' alt='rider_card' className='w-[6.25rem] h-[8.125rem] rounded-xs lg:w-[10.31rem] lg:h-[13rem] xl:w-[12.31rem] xl:h-[15rem]' />
         </div>
       </div>
     </div>

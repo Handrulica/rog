@@ -38,7 +38,6 @@ const Loop: React.FC<LoopProps> = ({ speed, direction, children, className }: Lo
     resetAnimation();
   }, [contentInstances]);
 
-
   React.useEffect(() => {
     setupInstances();
 
@@ -55,9 +54,9 @@ const Loop: React.FC<LoopProps> = ({ speed, direction, children, className }: Lo
         {[...Array(contentInstances)].map((_, ind) => (
           <div
             key={ind}
-            className='loop_instance flex w-max p-2 gap-4 md:gap-8 xl:gap-12 mx-4'
+            className='loop_instance flex w-max gap-8 p-4'
             style={{
-              animationDuration: `${speed}s`,
+              animationDuration: `${speed}s`, // Set a fixed animation duration
               animationDirection: direction === "right" ? "reverse" : "normal",
             }}
           >

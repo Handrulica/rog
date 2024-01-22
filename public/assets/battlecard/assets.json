@@ -1,44 +1,44 @@
 {
   "images": {
     "warrior": {
-      "common": "assets/battlecard/cards/warrior/andreas1.png",
-      "uncommon": "assets/battlecard/cards/warrior/andreas2.png",
-      "rare": "assets/battlecard/cards/warrior/andreas3.png",
-      "epic": "assets/battlecard/cards/warrior/andreas4.png",
-      "legendary": "assets/battlecard/cards/warrior/andreas5.png",
-      "divine": "assets/battlecard/cards/warrior/andreas6.png"
+      "common": "battlecard/cards/warrior/andreas1",
+      "uncommon": "battlecard/cards/warrior/andreas2",
+      "rare": "battlecard/cards/warrior/andreas3",
+      "epic": "battlecard/cards/warrior/andreas4",
+      "legendary": "battlecard/cards/warrior/andreas5",
+      "divine": "battlecard/cards/warrior/andreas6"
     },
     "hero": {
-      "common": "assets/battlecard/cards/hero/hercules1.png",
-      "uncommon": "assets/battlecard/cards/hero/hercules2.png",
-      "rare": "assets/battlecard/cards/hero/hercules3.png",
-      "epic": "assets/battlecard/cards/hero/hercules4.png",
-      "legendary": "assets/battlecard/cards/hero/hercules5.png",
-      "divine": "assets/battlecard/cards/hero/hercules6.png"
+      "common": "battlecard/cards/hero/hercules1",
+      "uncommon": "battlecard/cards/hero/hercules2",
+      "rare": "battlecard/cards/hero/hercules3",
+      "epic": "battlecard/cards/hero/hercules4",
+      "legendary": "battlecard/cards/hero/hercules5",
+      "divine": "battlecard/cards/hero/hercules6"
     },
     "creature": {
-      "common": "assets/battlecard/cards/creature/griffin1.png",
-      "uncommon": "assets/battlecard/cards/creature/griffin2.png",
-      "rare": "assets/battlecard/cards/creature/griffin3.png",
-      "epic": "assets/battlecard/cards/creature/griffin4.png",
-      "legendary": "assets/battlecard/cards/creature/griffin5.png",
-      "divine": "assets/battlecard/cards/creature/griffin6.png"
+      "common": "battlecard/cards/creature/griffin1",
+      "uncommon": "battlecard/cards/creature/griffin2",
+      "rare": "battlecard/cards/creature/griffin3",
+      "epic": "battlecard/cards/creature/griffin4",
+      "legendary": "battlecard/cards/creature/griffin5",
+      "divine": "battlecard/cards/creature/griffin6"
     },
     "titan": {
-      "common": "assets/battlecard/cards/titan/atlas1.png",
-      "uncommon": "assets/battlecard/cards/titan/atlas2.png",
-      "rare": "assets/battlecard/cards/titan/atlas3.png",
-      "epic": "assets/battlecard/cards/titan/atlas4.png",
-      "legendary": "assets/battlecard/cards/titan/atlas5.png",
-      "divine": "assets/battlecard/cards/titan/atlas6.png"
+      "common": "battlecard/cards/titan/atlas1",
+      "uncommon": "battlecard/cards/titan/atlas2",
+      "rare": "battlecard/cards/titan/atlas3",
+      "epic": "battlecard/cards/titan/atlas4",
+      "legendary": "battlecard/cards/titan/atlas5",
+      "divine": "battlecard/cards/titan/atlas6"
     },
     "god": {
-      "common": "assets/battlecard/cards/god/zeus1.png",
-      "uncommon": "assets/battlecard/cards/god/zeus2.png",
-      "rare": "assets/battlecard/cards/god/zeus3.png",
-      "epic": "assets/battlecard/cards/god/zeus4.png",
-      "legendary": "assets/battlecard/cards/god/zeus5.png",
-      "divine": "assets/battlecard/cards/god/zeus6.png"
+      "common": "battlecard/cards/god/zeus1",
+      "uncommon": "battlecard/cards/god/zeus2",
+      "rare": "battlecard/cards/god/zeus3",
+      "epic": "battlecard/cards/god/zeus4",
+      "legendary": "battlecard/cards/god/zeus5",
+      "divine": "battlecard/cards/god/zeus6"
     }
   },
   "powerranges": {

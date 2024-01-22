@@ -1,34 +1,34 @@
 {
   "images": {
     "common": [
-      "assets/enchantment/cards/potions/potion1.png",
-      "assets/enchantment/cards/scrolls/scroll1.png",
-      "assets/enchantment/cards/tomes/tome1.png"
+      "enchantment/cards/potions/potion1",
+      "enchantment/cards/scrolls/scroll1",
+      "enchantment/cards/tomes/tome1"
     ],
     "uncommon": [
-      "assets/enchantment/cards/potions/potion2.png",
-      "assets/enchantment/cards/scrolls/scroll2.png",
-      "assets/enchantment/cards/tomes/tome2.png"
+      "enchantment/cards/potions/potion2",
+      "enchantment/cards/scrolls/scroll2",
+      "enchantment/cards/tomes/tome2"
     ],
     "rare": [
-      "assets/enchantment/cards/potions/potion3.png",
-      "assets/enchantment/cards/scrolls/scroll3.png",
-      "assets/enchantment/cards/tomes/tome3.png"
+      "enchantment/cards/potions/potion3",
+      "enchantment/cards/scrolls/scroll3",
+      "enchantment/cards/tomes/tome3"
     ],
     "epic": [
-      "assets/enchantment/cards/potions/potion4.png",
-      "assets/enchantment/cards/scrolls/scroll4.png",
-      "assets/enchantment/cards/tomes/tome4.png"
+      "enchantment/cards/potions/potion4",
+      "enchantment/cards/scrolls/scroll4",
+      "enchantment/cards/tomes/tome4"
     ],
     "legendary": [ 
-      "assets/enchantment/cards/potions/potion5.png",
-      "assets/enchantment/cards/scrolls/scroll5.png",
-      "assets/enchantment/cards/tomes/tome5.png"
+      "enchantment/cards/potions/potion5",
+      "enchantment/cards/scrolls/scroll5",
+      "enchantment/cards/tomes/tome5"
     ],
     "divine": [
-      "assets/enchantment/cards/potions/potion6.png",
-      "assets/enchantment/cards/scrolls/scroll6.png",
-      "assets/enchantment/cards/tomes/tome6.png"
+      "enchantment/cards/potions/potion6",
+      "enchantment/cards/scrolls/scroll6",
+      "enchantment/cards/tomes/tome6"
     ]
   }
 }

@@ -368,19 +368,19 @@
   }
 
   .button-secondary {
-    background-image: url("./assets/button_secondary_background.png");
+    background-image: url("/assets/components/button_secondary_background.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .button-secondary:hover {
-    background-image: url("./assets/button_secondary_background_hover.png");
+    background-image: url("/assets/components/button_secondary_background_hover.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .button-secondary:active {
-    background-image: url("./assets//buton_secondary_background_clicked.png");
+    background-image: url("/assets/components/button_secondary_background_clicked.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -425,6 +425,12 @@
   .evolved_green {
     border-radius: 12px;
     border: 3px solid #3CDD4C;
+    box-shadow: 0px 0px 10px 0px #45BF60;
+  }
+
+  .evolved_white {
+    border-radius: 12px;
+    border: 3px solid #FFFFFF;
     box-shadow: 0px 0px 10px 0px #45BF60;
   }
 
@@ -490,4 +496,12 @@ html {
   border-radius: 10px;
   border: 2px solid var(--primary-80, #eeddac);
   box-shadow: 0px 0px 10px 0px #e3deac;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.dark {
+  filter: brightness(90%);
 }

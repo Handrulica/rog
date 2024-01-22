@@ -2,11 +2,6 @@ import React from "react";
 import { Button } from "src/components/button";
 import Loop from "src/components/loop";
 import menu from "public/assets/icons/Menu.svg";
-import character_1 from "public/assets/landing/character_1.png";
-import character_2 from "public/assets/landing/character_2.png";
-import character_3 from "public/assets/landing/character_3.png";
-import character_4 from "public/assets/landing/character_4.png";
-import bnb_coin from "public/assets/landing/bnb_coin.png";
 import landingData from "public/assets/landing/assets.json";
 import close from "public/assets/icons/close.svg";
 import { cn } from "src/lib/utils";
@@ -15,6 +10,9 @@ import telegram from "public/assets/footer/telegram.svg";
 import twitter from "public/assets/footer/twitter.svg";
 import useHover from "src/hooks/useHover";
 import { scrollTo } from "src/helpers/scrollTo";
+import ImageWithFallback from "src/components/image";
+import useDynamicImageType from "src/hooks/useDynamicImageType";
+import getImageUrl from "src/utils/getImageUrl";
 
 function ScrollLock() {
   React.useEffect(() => {
@@ -41,35 +39,39 @@ interface MenuItemProps {
   closeMenu: () => void;
 }
 
-const MenuItem = ({ title, hasChildren, to, items, closeMenu }: MenuItemProps) => {
+const MenuItem = ({
+  title,
+  hasChildren,
+  to,
+  items,
+  closeMenu,
+}: MenuItemProps) => {
   const ref = React.useRef(null);
   const isHover = useHover(ref);
   const [isOpen, setIsOpen] = React.useState(false);
 
   const handleHeaderClick = () => {
-    if(hasChildren) {
+    if (hasChildren) {
       setIsOpen(!isOpen);
-    }
-    else if (to !== undefined) {
+    } else if (to !== undefined) {
       scrollTo(to);
       closeMenu();
     }
-  }
+  };
 
   const handleItemClick = (itemLink: string) => {
     scrollTo(itemLink);
     closeMenu();
-  }
+  };
 
   return (
     <div ref={ref} className="w-full text-center">
       <h1
-        onClick={() =>  handleHeaderClick()}
+        onClick={() => handleHeaderClick()}
         className={cn(
           "block text-neutrals-80 font-bold heading-sm uppercase cursor-pointer",
           isHover && "text-primary"
         )}
-        
       >
         {isHover && <span className="mr-2">&#x2022;</span>}
         {title}
@@ -94,38 +96,40 @@ const MenuItem = ({ title, hasChildren, to, items, closeMenu }: MenuItemProps) =
 
 export const Landing = () => {
   const [showMenu, setShowMenu] = React.useState(false);
-  console.log(showMenu);
+  const imageType = useDynamicImageType();
+
   return (
     <div id="landing_section">
-      <div className="bg-[url('public/assets/landing/background.png')] bg-left-top bg-cover bg-no-repeat h-fit">
-        <div className="px-4 py-3 flex justify-between lg:justify-end lg:flex-row-reverse text-primary-90 font-bold heading-2xxs lg:heading-xs lg:font-bold items-center lg:px-12 lg:py-10">
-          <h1>Realms of Glory</h1>
+      <div className="bg-left-top bg-cover bg-no-repeat h-fit" style={{backgroundImage: `url(${getImageUrl("../../public/assets/landing/background")}.${imageType})`}}>
+        <div className="bg-neutrals-0/30  px-4 py-3 flex justify-start flex-row text-primary-90 font-bold heading-2xxs lg:heading-xs lg:font-bold lg:px-12 lg:mb-10 lg:pt-10">
           <button
-            className="lg:mr-5 ml-auto"
+            className="mr-4 lg:mr-5 "
             onClick={() => setShowMenu(!showMenu)}
           >
             <img src={menu} alt="menu" />
           </button>
+          <h1>Realms of Glory</h1>
           {
             <div>
               {showMenu && <ScrollLock />}
               <div
                 className={cn(
-                  "fixed overflow-hidden z-[9999]  top-[0px] right-[0px] bottom-[0px] w-[100vw] h-[100vh] bg-[url('public/assets/landing/background.png')] bg-right-top bg-cover bg-no-repeat menu",
+                  "fixed overflow-hidden z-[9999]  top-[0px] right-[0px] bottom-[0px] w-[100vw] h-[100vh] bg-right-top bg-cover bg-no-repeat menu",
                   showMenu ? "menu_open" : "menu_close"
                 )}
+                style={{backgroundImage: `url(${getImageUrl("../../public/assets/landing/background")}.${imageType})`}}
               >
                 <div className="bg-neutrals-5/50 h-full">
                   <div className="px-4 py-3 flex flex-row-reverse justify-end lg:justify-end lg:flex-row-reverse text-primary-90 font-bold heading-2xxs lg:heading-xs lg:font-bold items-center lg:px-12 lg:py-10">
                     <h1 className="text-neutrals-100">Realms of Glory</h1>
                     <button
-                      className="mr-5"
+                      className="mr-5 hover:sepia"
                       onClick={() => setShowMenu(!showMenu)}
                     >
                       <img src={close} alt="menu" />
                     </button>
                   </div>
-                  <div className="ml-5 text-center w-fit font-normal text-neutrals-100">
+                  <div className="ml-5 text-center w-fit font-norrmal text-neutrals-100">
                     <div>M</div>
                     <div>E</div>
                     <div>N</div>
@@ -143,7 +147,7 @@ export const Landing = () => {
                       items={[
                         { title: "The Battle Deck", to: "battledeck_section" },
                         { title: "Arena", to: "arena_section" },
-                        { title: "Treasure Hunt", to: "nfts_section_two" },
+                        { title: "Treasure Hunt", to: "treasure_section" },
                         {
                           title: "Champion's Call Tournament",
                           to: "#tournament_section",
@@ -162,7 +166,7 @@ export const Landing = () => {
                           title: "Enchatment Cards",
                           to: "enchantment_section",
                         },
-                        { title: "Unique Cards", to: "nfts_section_two" },
+                        { title: "Treasure Cards", to: "treasure_section" },
                         { title: "NFT Utility Cards", to: "nfts_section_two" },
                       ]}
                       hasChildren={true}
@@ -187,15 +191,27 @@ export const Landing = () => {
                       closeMenu={() => setShowMenu(false)}
                     />
                   </div>
-                  <div className="flex-col mt-10 self-end h-fit w-full pl-5">
-                    <a href="" target="_blank" className="block my-3">
+                  <div className="flex-col absolute bottom-32 mt-10 self-end h-fit w-fit pl-5">
+                    <a
+                      href="https://discord.gg/KWnQWDxRYG"
+                      target="_blank"
+                      className="block my-3 hover:sepia"
+                    >
                       <img src={discord} alt="discord" />
                     </a>
-                    <a href="" target="_blank" className="block my-3">
-                      <img src={telegram} alt="discord" />
+                    <a
+                      href="https://t.me/realmsofglory"
+                      target="_blank"
+                      className="block my-3 hover:sepia"
+                    >
+                      <img src={telegram} alt="telegram" />
                     </a>
-                    <a href="" target="_blank" className="block my-3">
-                      <img src={twitter} alt="discord" />
+                    <a
+                      href="https://twitter.com/realmsofglory_"
+                      target="_blank"
+                      className="block my-3 hover:sepia"
+                    >
+                      <img src={twitter} alt="twitter" />
                     </a>
                     <div className="w-full h-8 border-l-solid border-l-[1px] border-neutrals-80 ml-3" />
                   </div>
@@ -204,30 +220,34 @@ export const Landing = () => {
             </div>
           }
         </div>
-        <div className="relative h-[26rem] sm:h-[30rem] md:h-[42.5rem] lg:h-[70rem] xl:h-[57rem] lg:-mt-10">
+        <div className="relative bg-neutrals-0/30 bg-neutrals-0/30 h-[18rem] sm:h-[28rem] md:h-[38.5rem] lg:h-[50rem] xl:h-[40rem] lg:-mt-10">
           <div className="absolute w-full">
             <div className="relative w-[50%]">
-              <img
-                src={character_3}
+              <ImageWithFallback
+                src={"landing/character_3"}
                 alt="character_3"
-                className="absolute h-[15rem] sm:h-[21.5rem] md:h-[28rem] lg:h-[39.3rem] xl:h-[50.6rem]"
+                wrapperClassName="absolute top-3 sm:top-5 md:top-9"
+                className="h-[18rem] sm:h-[24.5rem] md:h-[32rem] lg:h-[39.3rem] dark"
               />
-              <img
-                src={character_2}
+              <ImageWithFallback
+                src={"landing/character_2"}
                 alt="character_2"
-                className="absolute h-[15rem] sm:h-[21.5rem] md:h-[28rem] lg:h-[39.3rem] xl:h-[50.6rem] top-16 sm:top-24 md:top-48 lg:top-24"
+                wrapperClassName="absolute top-3 sm:top-5 md:top-9"
+                className="h-[18rem] sm:h-[24.5rem] md:h-[32rem] lg:h-[39.3rem] dark"
               />
             </div>
-            <div className="relative w-[50%] float-right flex justify-end lg:-ml-10">
-              <img
-                src={character_4}
-                alt="character_3"
-                className="absolute h-[18rem] sm:h-[24.5rem] md:h-[32rem] lg:h-[39.3rem] xl:h-[54.6rem] top-3 sm:top-5 md:top-9"
+            <div className="relative w-[70%] sm:w-[50%] float-right flex justify-end lg:-ml-20">
+              <ImageWithFallback
+                src={"landing/character_4"}
+                alt="character_4"
+                wrapperClassName="absolute top-3 sm:top-5 md:top-9"
+                className="h-[18rem] sm:h-[24.5rem] md:h-[32rem] lg:h-[39.3rem] dark"
               />
-              <img
-                src={character_1}
-                alt="character_2"
-                className="absolute h-[15rem] sm:h-[21.5rem] md:h-[28rem] lg:h-[39.3rem] xl:h-[50.6rem] top-16 sm:top-24 md:top-48 lg:top-20"
+              <ImageWithFallback
+                src="landing/character_1"
+                alt="character_1"
+                wrapperClassName="absolute  top-16 sm:top-24 md:top-48 lg:top-20"
+                className="h-[15rem] sm:h-[18.5rem] md:h-[24rem] lg:h-[35.3rem] dark"
               />
             </div>
           </div>
@@ -239,47 +259,69 @@ export const Landing = () => {
             </h1>
             <h2 className="heading-xxs md:heading-2xxs lg:heading-xs text-primary-90 font-bold sm:font-bold text-center flex justify-center mt-4 items-center">
               Instant{" "}
-              <img
-                className="w-[17px] h-[17px] sm:w-[20px] sm:h-[20px] md:w-[23px] md:h-[23px] lg:w-[32px] lg:h-[32px] mx-1"
-                src={bnb_coin}
+              <ImageWithFallback
+                className="w-[15px] h-[17px] sm:w-[18px] sm:h-[20px] md:w-[21px] md:h-[23px] lg:w-[22px] lg:h-[24px] mx-1"
+                src="coins/eth/gold_eth"
               />{" "}
-              bnb rewards for each victory{" "}
+              eth rewards for each victory{" "}
             </h2>
-            <div className="flex w-full">
-              <Button variant="default" size="default" className="mt-6 mx-auto">
-                Buy Nfts
+            <div className="flex w-full justify-center mt-8 gap-6">
+              <Button variant="default" size="default" className="w-48">
+                Docs
+              </Button>
+              <Button variant="default" size="default" className="w-48">
+                Explore Nfts
+              </Button>
+              <Button variant="default" size="default" className="w-48">
+                Discord
               </Button>
             </div>
           </div>
-          <div className="gradient-one w-full pt-16 pb-2 flex flex-col justify-center absolute bottom-[0px]">
-            <div className="gradient-one w-full pt-12 xl:hidden">
-              <h1 className="heading-md sm:heading-lg md:heading-3lg text-primary-85 font-bold sm:font-bold md:font-bold text-center px-8 tracking-[1.9px] leading-[2rem]">
-                {" "}
-                Collect, battle, <br /> stake and{" "}
-                <span className="text-primary-100">earn</span>
-              </h1>
-              <h2 className="heading-xxs md:heading-2xxs text-primary-90 font-bold sm:font-bold text-center flex justify-center mt-4 items-center">
-                Instant{" "}
-                <img
-                  className="w-[17px] h-[17px] sm:w-[20px] sm:h-[20px] md:w-[23px] md:h-[23px] lg:w-[32px] lg:h-[32px] mx-1"
-                  src={bnb_coin}
-                />{" "}
-                bnb rewards for each victory{" "}
-              </h2>
-              <div className="flex w-full pb-16">
+          <div className="gradient-one sm:bg-none w-full pt-16 pb-2 flex flex-col justify-center absolute bottom-[0px] top-[20rem] sm:top-[12rem] md:top-[23rem]">
+            <div className="gradient-one w-full xl:hidden">
+              <div className="gradient-one sm:bg-none">
+                <h1 className="heading-md sm:heading-lg md:heading-3lg text-primary-85 font-bold sm:font-bold md:font-bold text-center px-8 tracking-[1.9px] leading-[2rem]">
+                  {" "}
+                  Collect, battle, <br /> stake and{" "}
+                  <span className="text-primary-100">earn</span>
+                </h1>
+                <h2 className="heading-xxs md:heading-2xxs text-primary-90 font-bold sm:font-bold text-center flex justify-center mt-4 items-center">
+                  Instant{" "}
+                  <ImageWithFallback
+                    className="w-[17px] h-[17px] sm:w-[20px] sm:h-[20px] md:w-[23px] md:h-[23px] lg:w-[32px] lg:h-[32px] mx-1"
+                    src="coins/eth/gold_eth"
+                  />
+                  eth rewards for each victory{" "}
+                </h2>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-3 mt-8 sm:mt-16 w-full bg-neutrals-0">
                 <Button
                   variant="default"
                   size="default"
-                  className="mt-6 mx-auto"
+                  className="w-48 mx-auto"
                 >
-                  Buy Nfts
+                  Docs
+                </Button>
+                <Button
+                  variant="default"
+                  size="default"
+                  className="w-48 my-8 sm:my-[0px] mx-auto"
+                >
+                  Explore Nfts
+                </Button>
+                <Button
+                  variant="default"
+                  size="default"
+                  className="w-48 mx-auto"
+                >
+                  Discord
                 </Button>
               </div>
             </div>
-            <div className="bg-neutrals-0 xl:gradient-one w-full pt-2 xl:pt-10 hidden lg:block">
-              <Loop direction="left" speed={30} className="mt-12">
+            <div className="bg-neutrals-0 xl:gradient-one w-full pt-2 xl:pt-10 hidden xl:mt-32 lg:block">
+              <Loop direction="left" speed={20} className="mt-12">
                 {landingData.cards.map((image, index) => (
-                  <img
+                  <ImageWithFallback
                     src={image}
                     key={index}
                     alt="landing_card"
@@ -291,9 +333,13 @@ export const Landing = () => {
           </div>
         </div>
       </div>
-      <Loop direction="left" speed={8} className="mt-12 md:mt-16 lg:hidden">
+      <Loop
+        direction="left"
+        speed={20}
+        className="mt-[20rem] sm:mt-12 md:mt-24 bg-neutrals-0 lg:hidden"
+      >
         {landingData.cards.map((image, index) => (
-          <img
+          <ImageWithFallback
             src={image}
             key={index}
             alt="landing_card"
