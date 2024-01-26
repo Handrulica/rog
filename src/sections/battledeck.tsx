@@ -30,7 +30,7 @@ const BattleDeck = () => {
               "battledeck/background"
             )}.${imageType})`,
           }}
-          className="bg-no-repeat bg-center bg-cover"
+          className="bg-no-repeat bg-right bg-cover"
         >
           <div className="bg-neutrals-0/20">
             <div className="pb-10 px-[4.4rem] gradient-two text-center">

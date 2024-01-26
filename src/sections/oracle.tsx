@@ -25,14 +25,14 @@ const Oracle = () => {
             Uncommon hero alliance
           </span>
           <ImageWithFallback src='oracle/oracle_1' className="hidden sm:block"/>
-          <ImageWithFallback src='oracle/oracle_mobile_1' className="block sm:hidden max-w-[320px] mx-auto" />
+          <ImageWithFallback src='oracle/mobile_oracle_1' className="block sm:hidden max-w-[320px] mx-auto" />
         </div>
         <div className="pb-20 sm:pb-32 md:pb-24 lg:pb-16 gradient-three">
           <span className="block heading-xs sm:heading-xs md:heading-sm lg:heading-md text-neutrals-100 font-bold sm:font-bold text-center mt-16 md:mt-24 mb-3 sm:mb-[0rem] sm:translate-y-16">
             Legendary creature & divine god synergy
           </span>
           <ImageWithFallback src='oracle/oracle_2' className="hidden sm:block"/>
-          <ImageWithFallback src='oracle/oracle_mobile_2' className="block sm:hidden max-w-[320px] mx-auto" />
+          <ImageWithFallback src='oracle/mobile_oracle_2' className="block sm:hidden max-w-[320px] mx-auto" />
         </div>
       </div>
     </div>

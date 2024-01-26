@@ -10,7 +10,7 @@ import useDynamicImageType from "src/hooks/useDynamicImageType";
 
 const BattleCard = () => {
   const [selectedRarityKey, setSelectedRarityKey] =
-    React.useState<keyof typeof rarities>("divine");
+    React.useState<keyof typeof rarities>("common");
   const [selectedTypeKey, setSelectedTypeKey] =
     React.useState<keyof typeof types>("warrior");
 
@@ -54,7 +54,7 @@ const BattleCard = () => {
             <div className="w-fit mx-8">
               <ImageWithFallback
                 src={BattleCardsData.images[selectedTypeKey][selectedRarityKey]}
-                className="w-[11rem] h-[13.75rem] sm:w-[16.40rem] sm:h-[21.55rem] md:w-[22.81rem] md:h-[29.75rem] lg:w-[22.55rem] lg:h-[29.75rem] rounded-[6%]"
+                className="w-[11rem] h-[13.75rem] sm:w-[17.40rem] sm:h-[21.55rem] md:w-[22.81rem] md:h-[29.75rem] lg:w-[23.55rem] lg:h-[29.75rem] rounded-[6%]"
               />
             </div>
             <div className="w-fit flex flex-col gap-5 items-center">
@@ -80,8 +80,8 @@ const BattleCard = () => {
             </div>
           </div>
           <div className="text-center spacing-y-2 -mt-4 sm:mt-12 md:mt-20">
-            <span className="block text-primary-90 body-md sm:body-2md font-bold sm:font-bold">
-              Power
+            <span className="block font-heading text-primary-90 body-md sm:body-2md font-bold">
+              POWER
             </span>
             <div className="flex justify-center">
               <div className="w-[3.75rem] h-[3.75rem] sm:w-[4.25rem] h-[4.25rem] md:w-[6.8rem] md:h-[6.8rem] text-center align-middle bg-[url('public/assets/battlecard/orb.png')] bg-contain bg-center bg-no-repeat flex items-center justify-center">
@@ -114,7 +114,7 @@ const BattleCard = () => {
                 className="w-12 h-12 sm:w-[3.5rem] sm:h-[3.5rem] md:w-[4rem] md:h-[4rem] mx-auto mt-2 mb-4 sm:mb-6 md:mb-8"
                 src={types[selectedTypeKey].selected}
               />
-              <p className="text-neutrals-100 body-sm whitespace-pre-wrap px-16">
+              <p className="text-neutrals-100 body-xs whitespace-pre-wrap px-16 h-32">
                 {types[selectedTypeKey].description}
               </p>
             </div>
@@ -126,7 +126,7 @@ const BattleCard = () => {
                 className="w-[3.75rem] h-[3.75rem] w-12 h-12 sm:w-[4rem] sm:h-[4rem] md:w-[4.25rem] md:h-[4.25rem] mx-auto mt-2 mb-4 sm:mb-6 md:mb-8"
                 src={rarities[selectedRarityKey].image}
               />
-              <p className="text-neutrals-100 body-sm whitespace-pre-wrap px-16 h-32">
+              <p className="text-neutrals-100 body-xs whitespace-pre-wrap px-16 h-32">
                 {rarities[selectedRarityKey].description}
               </p>
             </div>
@@ -136,7 +136,7 @@ const BattleCard = () => {
       </div>
       <div className="">
         <div className="relative w-full hidden xl:block pt-16 mt-16 overflow-y-hidden">
-          <div className="absolute w-full h-full grid grid-cols-2 blur-[2px] z-0">
+          <div className="absolute w-full h-full grid grid-cols-2 blur-[2px] z-0 overflow-hidden">
             <div>
               <div
                 style={{

@@ -1,52 +1,52 @@
 {
   "deck_images": {
     "warrior": {
-      "common": ["battledeck/warriors/common/andreas1", "battledeck/warriors/common/damaris1", "battledeck/warriors/common/darian1", "battledeck/warriors/common/isadora1", "battledeck/warriors/common/kostas1"],
-      "uncommon": ["battledeck/warriors/uncommon/aghatos2", "battledeck/warriors/uncommon/alexander2", "battledeck/warriors/uncommon/isadora2", "battledeck/warriors/uncommon/kallias2", "battledeck/warriors/uncommon/menelaus2"],
-      "rare": ["battledeck/warriors/rare/alexander3", "battledeck/warriors/rare/damaris3", "battledeck/warriors/rare/isadora3", "battledeck/warriors/rare/kallias3", "battledeck/warriors/rare/menelaus3"],
-      "epic": ["battledeck/warriors/epic/aghatos4", "battledeck/warriors/epic/andreas4", "battledeck/warriors/epic/damaris4", "battledeck/warriors/epic/darian4", "battledeck/warriors/epic/theron4"],
-      "legendary": ["battledeck/warriors/legendary/isadora5", "battledeck/warriors/legendary/menelaus5"],
-      "divine": ["battledeck/warriors/divine/andreas6", "battledeck/warriors/divine/damaris6"]
+      "common": ["battledeck_warriors/common/andreas1", "battledeck_warriors/common/damaris1", "battledeck_warriors/common/darian1", "battledeck_warriors/common/isadora1", "battledeck_warriors/common/kostas1"],
+      "uncommon": ["battledeck_warriors/uncommon/aghatos2", "battledeck_warriors/uncommon/alexander2", "battledeck_warriors/uncommon/isadora2", "battledeck_warriors/uncommon/kallias2", "battledeck_warriors/uncommon/menelaus2"],
+      "rare": ["battledeck_warriors/rare/alexander3", "battledeck_warriors/rare/damaris3", "battledeck_warriors/rare/isadora3", "battledeck_warriors/rare/kallias3", "battledeck_warriors/rare/menelaus3"],
+      "epic": ["battledeck_warriors/epic/aghatos4", "battledeck_warriors/epic/andreas4", "battledeck_warriors/epic/damaris4", "battledeck_warriors/epic/darian4", "battledeck_warriors/epic/theron4"],
+      "legendary": ["battledeck_warriors/legendary/isadora5", "battledeck_warriors/legendary/menelaus5"],
+      "divine": ["battledeck_warriors/divine/andreas6", "battledeck_warriors/divine/damaris6"]
     },
     "hero": {
-      "common": ["battledeck/heroes/common/achiles1", "battledeck/heroes/common/atalanta1", "battledeck/heroes/common/helen1", "battledeck/heroes/common/hercules1", "battledeck/heroes/common/jason1"],
-      "uncommon": ["battledeck/heroes/uncommon/atalanta2", "battledeck/heroes/uncommon/cassandra2", "battledeck/heroes/uncommon/hector2", "battledeck/heroes/uncommon/hercules2", "battledeck/heroes/uncommon/leonidas2"],
-      "rare": ["battledeck/heroes/rare/achiles3", "battledeck/heroes/rare/atalanta3", "battledeck/heroes/rare/helen3", "battledeck/heroes/rare/jason3", "battledeck/heroes/rare/leonidas3"],
-      "epic": ["battledeck/heroes/epic/achiles4", "battledeck/heroes/epic/atalanta4", "battledeck/heroes/epic/cassandra4", "battledeck/heroes/epic/hercules4", "battledeck/heroes/epic/jason4"],
-      "legendary": ["battledeck/heroes/legendary/antiope5", "battledeck/heroes/legendary/hercules5"],
-      "divine": ["battledeck/heroes/divine/antiope6", "battledeck/heroes/divine/jason6"]
+      "common": ["battledeck_heroes/common/achiles1", "battledeck_heroes/common/atalanta1", "battledeck_heroes/common/helen1", "battledeck_heroes/common/hercules1", "battledeck_heroes/common/jason1"],
+      "uncommon": ["battledeck_heroes/uncommon/atalanta2", "battledeck_heroes/uncommon/cassandra2", "battledeck_heroes/uncommon/hector2", "battledeck_heroes/uncommon/hercules2", "battledeck_heroes/uncommon/leonidas2"],
+      "rare": ["battledeck_heroes/rare/achiles3", "battledeck_heroes/rare/atalanta3", "battledeck_heroes/rare/helen3", "battledeck_heroes/rare/jason3", "battledeck_heroes/rare/leonidas3"],
+      "epic": ["battledeck_heroes/epic/achiles4", "battledeck_heroes/epic/atalanta4", "battledeck_heroes/epic/cassandra4", "battledeck_heroes/epic/hercules4", "battledeck_heroes/epic/jason4"],
+      "legendary": ["battledeck_heroes/legendary/antiope5", "battledeck_heroes/legendary/hercules5"],
+      "divine": ["battledeck_heroes/divine/antiope6", "battledeck_heroes/divine/jason6"]
     },
     "creature": {
-      "common": ["battledeck/creatures/common/chimera1", "battledeck/creatures/common/harpy1", "battledeck/creatures/common/hydra1", "battledeck/creatures/common/minotaur1", "battledeck/creatures/common/satyr1"],
-      "uncommon": ["battledeck/creatures/uncommon/centaur2", "battledeck/creatures/uncommon/dryad2", "battledeck/creatures/uncommon/griffin2", "battledeck/creatures/uncommon/medusa2", "battledeck/creatures/uncommon/satyr2"],
-      "rare": ["battledeck/creatures/rare/chimera3", "battledeck/creatures/rare/harpy3", "battledeck/creatures/rare/hydra3", "battledeck/creatures/rare/medusa3", "battledeck/creatures/rare/pegasus3"],
-      "epic": ["battledeck/creatures/epic/centaur4", "battledeck/creatures/epic/dryad4", "battledeck/creatures/epic/griffin4", "battledeck/creatures/epic/minotaur4", "battledeck/creatures/epic/pegasus4"],
-      "legendary": ["battledeck/creatures/legendary/harpy5", "battledeck/creatures/legendary/satyr5"],
-      "divine": ["battledeck/creatures/divine/chimera6", "battledeck/creatures/divine/griffin6"]
+      "common": ["battledeck_creatures/common/chimera1", "battledeck_creatures/common/harpy1", "battledeck_creatures/common/hydra1", "battledeck_creatures/common/minotaur1", "battledeck_creatures/common/satyr1"],
+      "uncommon": ["battledeck_creatures/uncommon/centaur2", "battledeck_creatures/uncommon/dryad2", "battledeck_creatures/uncommon/griffin2", "battledeck_creatures/uncommon/medusa2", "battledeck_creatures/uncommon/satyr2"],
+      "rare": ["battledeck_creatures/rare/chimera3", "battledeck_creatures/rare/harpy3", "battledeck_creatures/rare/hydra3", "battledeck_creatures/rare/medusa3", "battledeck_creatures/rare/pegasus3"],
+      "epic": ["battledeck_creatures/epic/centaur4", "battledeck_creatures/epic/dryad4", "battledeck_creatures/epic/griffin4", "battledeck_creatures/epic/minotaur4", "battledeck_creatures/epic/pegasus4"],
+      "legendary": ["battledeck_creatures/legendary/harpy5", "battledeck_creatures/legendary/satyr5"],
+      "divine": ["battledeck_creatures/divine/chimera6", "battledeck_creatures/divine/griffin6"]
     },
     "titan": {
-      "common": ["battledeck/titans/common/atlas1", "battledeck/titans/common/gaia1", "battledeck/titans/common/hyperion1", "battledeck/titans/common/kronos1", "battledeck/titans/common/phoebe1"],
-      "uncommon": ["battledeck/titans/uncommon/kronos2", "battledeck/titans/uncommon/perses2", "battledeck/titans/uncommon/prometheus2", "battledeck/titans/uncommon/themis2", "battledeck/titans/uncommon/uranus2"],
-      "rare": ["battledeck/titans/rare/atlas3", "battledeck/titans/rare/phoebe3", "battledeck/titans/rare/prometheus3", "battledeck/titans/rare/rhea3", "battledeck/titans/rare/uranus3"],
-      "epic": ["battledeck/titans/epic/atlas4", "battledeck/titans/epic/gaia4", "battledeck/titans/epic/perses4", "battledeck/titans/epic/rhea4", "battledeck/titans/epic/themis4"],
-      "legendary": ["battledeck/titans/legendary/gaia5", "battledeck/titans/legendary/hyperion5"],
-      "divine": ["battledeck/titans/divine/hyperion6", "battledeck/titans/divine/prometheus6"]
+      "common": ["battledeck_titans/common/atlas1", "battledeck_titans/common/gaia1", "battledeck_titans/common/hyperion1", "battledeck_titans/common/kronos1", "battledeck_titans/common/phoebe1"],
+      "uncommon": ["battledeck_titans/uncommon/kronos2", "battledeck_titans/uncommon/perses2", "battledeck_titans/uncommon/prometheus2", "battledeck_titans/uncommon/themis2", "battledeck_titans/uncommon/uranus2"],
+      "rare": ["battledeck_titans/rare/atlas3", "battledeck_titans/rare/phoebe3", "battledeck_titans/rare/prometheus3", "battledeck_titans/rare/rhea3", "battledeck_titans/rare/uranus3"],
+      "epic": ["battledeck_titans/epic/atlas4", "battledeck_titans/epic/gaia4", "battledeck_titans/epic/perses4", "battledeck_titans/epic/rhea4", "battledeck_titans/epic/themis4"],
+      "legendary": ["battledeck_titans/legendary/gaia5", "battledeck_titans/legendary/hyperion5"],
+      "divine": ["battledeck_titans/divine/hyperion6", "battledeck_titans/divine/prometheus6"]
     },
     "god": {
-      "common": ["battledeck/gods/common/hades1", "battledeck/gods/common/hera1", "battledeck/gods/common/hermes1", "battledeck/gods/common/pandora1", "battledeck/gods/common/poseidon1"],
-      "uncommon": ["battledeck/gods/uncommon/artemis2", "battledeck/gods/uncommon/hephaestus2", "battledeck/gods/uncommon/hera2", "battledeck/gods/uncommon/poseidon2", "battledeck/gods/uncommon/zeus2"],
-      "rare": ["battledeck/gods/rare/artemis3", "battledeck/gods/rare/hades3", "battledeck/gods/rare/hephaestus3", "battledeck/gods/rare/hermes3", "battledeck/gods/rare/pandora3"],
-      "epic": ["battledeck/gods/epic/aphrodite4", "battledeck/gods/epic/artemis4", "battledeck/gods/epic/hades4", "battledeck/gods/epic/hera4", "battledeck/gods/epic/poseidon4"],
-      "legendary": ["battledeck/gods/legendary/artemis5", "battledeck/gods/legendary/hades5"],
-      "divine": ["battledeck/gods/divine/hephaestus6", "battledeck/gods/divine/zeus6"]
+      "common": ["battledeck_gods/common/hades1", "battledeck_gods/common/hera1", "battledeck_gods/common/hermes1", "battledeck_gods/common/pandora1", "battledeck_gods/common/poseidon1"],
+      "uncommon": ["battledeck_gods/uncommon/artemis2", "battledeck_gods/uncommon/hephaestus2", "battledeck_gods/uncommon/hera2", "battledeck_gods/uncommon/poseidon2", "battledeck_gods/uncommon/zeus2"],
+      "rare": ["battledeck_gods/rare/artemis3", "battledeck_gods/rare/hades3", "battledeck_gods/rare/hephaestus3", "battledeck_gods/rare/hermes3", "battledeck_gods/rare/pandora3"],
+      "epic": ["battledeck_gods/epic/aphrodite4", "battledeck_gods/epic/artemis4", "battledeck_gods/epic/hades4", "battledeck_gods/epic/hera4", "battledeck_gods/epic/poseidon4"],
+      "legendary": ["battledeck_gods/legendary/artemis5", "battledeck_gods/legendary/hades5"],
+      "divine": ["battledeck_gods/divine/hephaestus6", "battledeck_gods/divine/zeus6"]
     }
   },
   "inventory_images": [
-    "battledeck/inventory/1",
-    "battledeck/inventory/2",
-    "battledeck/inventory/3",
-    "battledeck/inventory/4",
-    "battledeck/inventory/5",
-    "battledeck/inventory/6"
+    "battledeck_inventory/1",
+    "battledeck_inventory/2",
+    "battledeck_inventory/3",
+    "battledeck_inventory/4",
+    "battledeck_inventory/5",
+    "battledeck_inventory/6"
   ]
 }

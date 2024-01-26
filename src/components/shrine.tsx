@@ -180,7 +180,7 @@ const Shrine = () => {
           ].plural.toUpperCase()}
         </span>
         <div className="w-full sm:bg-none bg-center bg-cover bg-no-repeat sm:pl-10">
-          <div className="grid sm:grid-cols-2 xl:grid-cols-3 gradient-two sm:bg-none sm:items-center">
+          <div className="grid sm:grid-cols-2 xl:grid-cols-3 sm:bg-none sm:items-center">
             <div className="w-full px-8 sm:pl-8 sm:pr-4 mt-2 sm:mt-20">
               <span className="hidden sm:block heading-lg md:heading-2lg lg:heading-3lg 2xl:heading-2xl font-bold text-primary-90 mt-10">
                 {Object.values(types)[
@@ -293,7 +293,6 @@ const Shrine = () => {
               aboveXl={true}
             />
           </div>
-          <div className="xl:hidden w-full h-16 gradient-three" />
         </div>
       </div>
       <div className="hidden xl:block w-full h-16 gradient-three" />

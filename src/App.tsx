@@ -35,8 +35,6 @@ function App() {
                 <Separator size="small" className="mt-20 md:mt-24 mb-3 md:mb-16 xl:mt-64" />
                 <BattlePack />
                 <Separator size="small" className="mt-8 md:mt-24 mb-3 md:mb-16" />
-                <Arena />
-                <Separator size="small" className="mt-8 md:mt-24 mb-3 md:mb-16" />
                 <BattleCard />
                 <Separator size="small" className="mt-8 md:mt-24 mb-3 md:mb-16" />
                 <BattleDeck />
@@ -44,15 +42,17 @@ function App() {
                 <Oracle />
                 <Separator size="small" className="mt-8 md:mt-24 mb-3 md:mb-16" />
                 <Enchancement />
-                <Separator size="small" className="mt-8 md:mt-24 mb-3 md:mb-16" />
+                <Separator size="small" className="mt-12 md:mt-24 mb-3 md:mb-16" />
+                <Arena />
+                <Separator size="small" className="mt-20 md:mt-24 mb-3 md:mb-16" />
+                <Tournament />
+                <Separator size="small" className="mt-20 md:mt-24 mb-3 md:mb-16" />
                 <Treasure />
                 <Separator size="small" className="mt-8 mb-3" />
                 <Nfts />
                 <InauguralSections />
-                <Separator size="small" className="mt-8 md:mt-24 mb-3 md:mb-16" />
+                <Separator size="small" className="mt-32 md:mt-24 mb-3 md:mb-16" />
                 <Inaugural />
-                <Separator size="small" className="mt-20 md:mt-24 mb-3 md:mb-16" />
-                <Tournament />
                 <Separator size="small" className="mt-20 md:mt-24 mb-3 md:mb-16" />
                 <Roadmap />
                 <Separator size="small" className="mt-16 md:mt-24 mb-3 md:mb-16" />

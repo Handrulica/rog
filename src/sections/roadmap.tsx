@@ -34,7 +34,7 @@ const Roadmap = () => {
               return (
                 <div key={index} className="sm:flex sm:w-fit">
                   <StepperTitle
-                    className="hidden sm:block sm:w-[8rem] mt-2 pl-2 sm:ml-0"
+                    className="hidden sm:block sm:w-[8rem] mt-2 pl-2 sm:ml-[0px]"
                     variant={variant}
                   >
                     {entry.period}
@@ -55,7 +55,7 @@ const Roadmap = () => {
                         variant={
                           index === RoadmapData.length - 2
                             ? "disabled"
-                            : "default"
+                            : index === RoadmapData.length  - 1 ? "none" : "default"
                         }
                       >
                         <p className="sm:hidden text-neutrals-100 heading-xs font-bold">
@@ -72,11 +72,6 @@ const Roadmap = () => {
                           ))}
                         </ul>
                       </StepperContent>
-                    )}
-                    {variant === "disabled" && (
-                      <p className="sm:hidden text-green-30 ml-20 heading-xs font-bold">
-                        {entry.title}
-                      </p>
                     )}
                   </div>
                 </div>

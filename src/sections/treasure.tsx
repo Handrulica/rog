@@ -69,7 +69,11 @@ const Treasure = () => {
     <React.Fragment>
       <div
         id="treasure_section"
-        style={{backgroundImage: `url(${getImageUrl("treasure/background")}.${imageType})`}}
+        style={{
+          backgroundImage: `url(${getImageUrl(
+            "treasure/background"
+          )}.${imageType})`,
+        }}
         className="bg-left bg-no-repeat bg-cover"
       >
         <div className="xl:gradient-two xl:hidden">
@@ -81,23 +85,23 @@ const Treasure = () => {
               Discover unique cards
             </h2>
             <p className="body-xs sm:body-xs md:body-2md text-neutrals-100 text-center px-8 sm:px-16 md:px-12 pb-10 mt-12 sm:mt-12 md:mt-16 max-w-md sm:max-w-xl mx-auto">
-              Scattered within the Battle Pack, Unique and Valuable cards of
-              magical clothing and weapons awaits those eager to combine the
-              excitement of collecting and battling decks of cards with the
-              thrill of the hunt.
+              Outside the Arena, the hunt is on for Treasured Sets — rare
+              collections promising even greater crypto riches. These sets,
+              representing each faction, are the most coveted treasures in the
+              Realm.
             </p>
           </div>
           <div className="grid grid-cols-2 w-fit mx-auto gap-10 mt-8">
             <div>
               <ImageWithFallback
-                src='treasure/presentation_back'
+                src="treasure/presentation_back"
                 className="w-[8rem] h-[9.5rem] md:w-[15.47rem] md:h-[19rem]"
               />
             </div>
             <div>
               <ImageWithFallback
-                src='treasures/hero/armor'
-                className="w-[6.8rem] h-[8.7rem] rotate-12 md:w-[15.47rem] md:h-[19rem] mt-2 ml-2"
+                src="treasures/hero/armor"
+                className="w-[6.8rem] h-[8.7rem] rotate-12 md:w-[13rem] md:h-[17rem] mt-2 md:mt-4 ml-2"
               />
             </div>
           </div>
@@ -120,19 +124,19 @@ const Treasure = () => {
             <div className="flex justify-center items-center">
               <div>
                 <ImageWithFallback
-                  src='treasure/presentation_back'
+                  src="treasure/presentation_back"
                   className="w-[7.5rem] h-[9.5rem] md:w-[15.47rem] md:h-[19rem]"
                 />
               </div>
               <p className="body-2md text-neutrals-100 text-center px-12 pb-10 mt-16 max-w-[53%]">
-                Scattered within the Battle Pack, Unique and Valuable cards of
-                magical clothing and weapons awaits those eager to combine the
-                excitement of collecting and battling decks of cards with the
-                thrill of the hunt.
+                Outside the Arena, the hunt is on for Treasured Sets — rare
+                collections promising even greater crypto riches. These sets,
+                representing each faction, are the most coveted treasures in the
+                Realm.
               </p>
               <div className="rotate-12 pl-8">
                 <ImageWithFallback
-                  src='treasures/hero/armor'
+                  src="treasures/hero/armor"
                   className="w-[7.5rem] h-[9.5rem] md:w-[13.7rem] md:h-[18rem]"
                 />
               </div>
@@ -188,7 +192,7 @@ const Treasure = () => {
                   src={item}
                   alt={"item_set" + index}
                   className={cn(
-                    "w-[6.25rem] h-32 sm:w-[6.8rem] sm:h-[8.87rem] md:w-[7.5rem] md:h-[9.75rem] lg:w-[10.5rem] lg:h-[13.31rem] rounded-xs sm:rounded cursor-pointer"
+                    "w-[6.25rem] h-32 sm:w-[6.8rem] sm:h-[8.87rem] md:w-[7.5rem] md:h-[9.75rem] lg:w-[10rem] lg:h-[13.31rem] rounded-xs sm:rounded cursor-pointer"
                   )}
                   onClick={openModal}
                 />
@@ -216,7 +220,7 @@ const Treasure = () => {
               src={treasureData[selectedSetKey].items[selectedSetIndex]}
               alt="modal_item"
               className={cn(
-                "w-[13.5rem] h-[17.25rem] sm:w-[20rem] sm:h-[24.25rem] md:w-[25rem] md:h-[31.25rem] lg:w-[26rem] lg:h-[32.25rem] rounded-xs sm:rounded"
+                "w-[13.5rem] h-[17.25rem] sm:w-[19rem] sm:h-[24.25rem] md:w-[25rem] md:h-[32.25rem] lg:w-[25rem] lg:h-[32.25rem] lg:w-[25rem] lg:h-[32.25rem] rounded-xs sm:rounded"
               )}
             />
             <Button

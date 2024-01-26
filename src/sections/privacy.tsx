@@ -3,8 +3,8 @@ import React from "react";
 const PrivacyPolicy: React.FC = () => {
   return (
     <div>
-      <div className="bg-[url('public/assets/informations/background.png')] bg-no-repeat bg-top bg-cover w-full pt-16 md:pt-32 pb-10 md:pb-20 text-center">
-        <h1 className="text-neutrals-100 font-heading heading-md md:heading-lg font-extrabold">
+      <div className="bg-[url('public/assets/informations/background.png')] bg-no-repeat bg-center bg-cover w-full pt-16 md:pt-32 pb-10 md:pb-20 text-center">
+        <h1 className="text-neutrals-100 font-heading heading-md md:heading-lg font-extrabold pb-8">
           Privacy Policy
         </h1>
       </div>

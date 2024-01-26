@@ -22,7 +22,7 @@ const Pandora = () => {
         <div className="gradient-two grid sm:grid-cols-2 items-center">
           <div className="sm:mt-32 sm:pl-10 lg:pl-24">
             <h1 className="heading-sm sm:heading-md md:heading-lg lg:heading-2lg xl:heading-3lg lg:max-w-md font-bold text-center sm:text-left sm:tracking-wide text-primary-90 px-8">
-              pandora’s mystery box
+              Pandora’s Mystery Box
             </h1>
             <p className="heading-2xxs sm:heading-xs md:heading-sm font-bold sm:font-normal text-primary-80 mt-1 text-center sm:text-left sm:mt-2 sm:tracking-wide md:mt-3 px-8 sm:pl-0">
               find the missing link with pandora’s help!
@@ -45,8 +45,8 @@ const Pandora = () => {
             />
           </div>
         </div>
-        <div className="sm:bg-none bg-cover bg-center bg-no-repeat">
-          <div className="py-24 gradient-two sm:bg-none" />
+        <div className="gradient-one sm:bg-none bg-cover bg-center bg-no-repeat">
+          <div className="py-12 sm:bg-none" />
           <p className="gradient-three text-center text-primary-85 font-bold heading-xs px-16 pt-64 sm:hidden">
             a powerful helping hand in your treasure hunt quests!
           </p>
@@ -155,8 +155,9 @@ const Pandora = () => {
               <div className="flex">
                 <ImageWithFallback
                   src={TreasureData[selectedKeySet].missing}
-                  className="rounded w-[11.25rem] sm:h-[14rem] md:w-[12.5rem] md:h-[16.25rem] sm:h-[15.4rem] md:h-[19.81rem] lg:w-[18.18rem] lg:h-[22.75rem] mx-auto evolved_green"
+                  className="rounded w-[11.25rem] sm:h-[14rem] md:w-[12.5rem] md:h-[16.25rem] sm:h-[15.4rem] md:h-[19.81rem] lg:w-[18.18rem] lg:h-[22.75rem] evolved_green"
                   alt="treasure_wizar_orb"
+                  wrapperClassName='mx-auto'
                 />
               </div>
             </div>

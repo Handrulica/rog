@@ -43,8 +43,8 @@ const Faq = () => {
     <div id="faq_section" className="mt-24">
       <div className="relative w-full">
         <div className="absolute w-full h-full grid z-0">
-          <div className="hidden lg:block">
-            <ImageWithFallback className="w-[100vw]" src={'faq/background'} />
+          <div className="hidden lg:block gradient-one gradient-two">
+            <ImageWithFallback className="w-[80vw] gradient-four" src={'faq/background'} />
           </div>
         </div>
         <div className="relative lg:pr-6 lg:pl-24 lg:grid lg:grid-cols-2">

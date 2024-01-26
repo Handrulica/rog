@@ -83,7 +83,7 @@ const Arena = () => {
               "arena/background_mobile"
             )}.${imageType}")`
             : `url("${getImageUrl(
-              "arena/background_mobile"
+              "arena/background_desktop"
             )}.${imageType}")`,
         }}
         className={`bg-top-left sm:bg-left xl:bg-center bg-cover bg-no-repeat h-fit relative`}

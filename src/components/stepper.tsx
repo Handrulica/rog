@@ -10,7 +10,7 @@ export const stepperIndicatorVariants = cva("", {
     variant: {
       default: "w-20 h-20",
       blue: "w-20 h-20",
-      disabled: "w-8 h-8 sm:w-10 sm:h-10 ml-[1.6rem] sm:-ml-[0.2rem]",
+      disabled: "w-8 h-8 sm:w-10 sm:h-10 ml-6 sm:mr-12",
     },
   },
   defaultVariants: {
@@ -53,6 +53,7 @@ export const stepperLineVariants = cva("w-[4px] md:w-[3px] mx-auto", {
       default: "bg-green-30",
       blue: "bg-blue-80",
       disabled: "stepper-disabled-line",
+      none: "bg-none"
     },
   },
   defaultVariants: {
@@ -82,7 +83,7 @@ export const stepperTitleVariants = cva("heading-md sm:ml-8 lg:heading-md font-b
       default: "text-green-30 sm:text-primary-100 sm:heading-xs sm:font-bold",
       blue: "text-blue-80",
       disabled:
-        "text-green-30 sm:text-green-30 sm:heading-xs sm:font-bold ml-6 sm:ml-14",
+        "text-green-30 sm:text-green-30 sm:heading-xs sm:font-bold ml-6 sm:ml-[0px]",
     },
   },
   defaultVariants: {
@@ -112,7 +113,7 @@ export const StepperTitle = React.forwardRef<HTMLDivElement, StepperTitleProps>(
 
 export interface StepperContentProps
   extends React.HTMLAttributes<HTMLDivElement> {
-  variant?: "default" | "blue" | "disabled";
+  variant?: "default" | "blue" | "disabled" | "none";
 }
 
 export const StepperContent = React.forwardRef<

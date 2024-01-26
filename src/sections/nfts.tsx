@@ -1,7 +1,6 @@
 import Loop from "src/components/loop";
 import nftsData from 'public/assets/nfts/assets.json';
 import NftCard from "src/components/nft-card";
-import Separator from "src/components/separator";
 import ImageWithFallback from "src/components/image";
 import useDynamicImageType from "src/hooks/useDynamicImageType";
 import getImageUrl from "src/utils/getImageUrl";
@@ -16,7 +15,7 @@ const Nfts = () => {
           <div className='w-fit mx-auto'>
             <span className='block font-heading text-[0.625rem] sm:heading-3xxs md:heading-xs lg:heading-md text-neutrals-100 font-bold sm:font-normal'>Explore</span>
             <h1 className='block font-heading text-[1.375rem] sm:heading-lg md:heading-2lg lg:heading-xl xl:heading-2xl text-primary-90 font-bold sm:font-bold'>Realms of Glory NFTs</h1>
-            <span className='block text-right font-heading text-[0.625rem] sm:heading-3xxs md:heading-xs lg:heading-sm font-bold sm:font-bold text-accent'>Limited Edition Utility Cards</span>
+            <span className='block text-right font-heading text-[0.625rem] sm:heading-3xxs md:heading-xs lg:heading-sm font-bold sm:font-bold text-accent'>9 Limited Edition Utility Cards</span>
           </div>
         </div>
         <div className='gradient-three'>
@@ -27,9 +26,8 @@ const Nfts = () => {
               )
             }
           </Loop>
-          <div id="nfts_section_two" className='px-10 pt-16 sm:pt-20 md:pt-24 lg:pt-32 xl:pt-40 pb-4 sm:pb-8 md:pb-16 gradient-one'>
-            <Separator size='small'/>
-            <p className='heading-xs md:heading-sm font-bold text-primary-85 text-center sm:max-w-md md:max-w-lg mx-auto mt-2 md:mt-16'><span className='text-neutrals-100'>Stake</span> Realms of Glory NFTs for Exclusive Battles Benefits and Epic Rewards</p>
+          <div id="nfts_section_two" className='px-10 pt-16 sm:pt-20 md:pt-24 lg:pt-16 xl:pt-16 pb-4 sm:pb-8 md:pb-16 gradient-one'>
+            <p className='heading-xs sm:heading-sm lg:heading-md xl:heading-lg font-bold text-primary-85 text-center mx-auto mt-2 '><span className='text-neutrals-100'>Stake</span> Realms of Glory NFTs for Exclusive Battles Benefits and Epic Rewards</p>
           </div>
         </div>
 

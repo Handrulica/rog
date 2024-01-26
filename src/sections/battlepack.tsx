@@ -56,7 +56,7 @@ const BattlePack = () => {
         </div>
         <div className='hidden md:block gradient-three w-full lg:h-[6rem] xl:h-[10rem]' />
       </div>
-      <div className="md:bg-none bg-center sm:bg-center bg-cover bg-no-repeat h-fit relative xl:hidden" style={{backgroundImage: `url(${getImageUrl("battlepack/background")}.${imageType})`}}>
+      <div className="md:bg-none bg-center sm:bg-center bg-cover bg-no-repeat h-fit relative xl:hidden">
         <div className='w-full h-12 bg-neutrals-0' />
         <div className='w-full h-40 sm:h-64 gradient-two' />
         <div className='px-12 w-full absolute top-1'>

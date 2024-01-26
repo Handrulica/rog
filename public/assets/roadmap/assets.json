@@ -1,32 +1,32 @@
 [
   {
     "period": "Q2 2023",
-    "title": "Crafting the vision of realms of glory",
-    "items": ["Define the game's theme, and core gameplay mechanics", "Design the gameplay experience", "Prototype the automatic outcome of card battles"],
+    "title": "Vision and Mechanics",
+    "items": ["Established core theme and gameplay mechanics.", "Designed player-centric gameplay experience.", "Prototyped automatic card battle outcomes."],
     "variant": "default"
   },
   {
     "period": "Q3 2023",
-    "title": "Bringing Life into The Realms",
-    "items": ["Craft the artwork for Realms of Glory", "Design and document the card types, rarities and their respective power characteristics", "Develop a prototype to test core gameplay mechanics, such as card battles and power balancing"],
+    "title": "Artistic Development",
+    "items": ["Began crafting Realms of Glory’s artwork.", "Developed gameplay mechanics prototype.", "Initiated environment and character modeling.", "Implemented foundational sound design elements."],
     "variant": "default"
   },
   {
     "period": "Q4 2023",
-    "title": "Art and Character Creation",
-    "items": ["Develop a consistent art style that complements the game's theme and enhances the player experience \n Design over 400 cards of iconic characters and creatures", "Create captivating environments and illustrations to bring the world of Realms of Glory to life.", "Define the power levels and rarities of each card type, emphasizing strategic depth and synergy between cards", "Design the Realms of Glory NFTs"],
+    "title": "Art and NFTs",
+    "items": ["Developed a cohesive art style for the game.", "Created over 400 unique character cards.", "Enhanced in-game animations and visual effects.", "Finalized the UI/UX design for optimal player experience.", "Designed Realms of Glory’s exclusive NFTs.", "Designed the NFT-Driven Economy of Realms of Glory", "Developed a responsive player scoreboard."],
     "variant": "default"
   },
   {
     "period": "Q1 2024",
-    "title": "the Epic World of Realms of Glory",
-    "items": ["Realms of Glory public  presentation website launch", "Realms of Glory community building", "Phase 1 Limited Edition NFTs Public Sale", "Implement secure transactional functionality for buying and opening card packs", "Implement the automatic outcome battle system for The Arena and The Champion’s Call Tournament", "Create a responsive scoreboard tracking rankings and overall performance", "Phase 2 and Phase 3 NFT Public sale"],
+    "title": "Launch and Community Engagement",
+    "items": ["Developed coding for web3 smart contract integration.", "Launched Realms of Glory’s official website.", "Initiated community-building activities.", "Implemented secure card pack transactions.", "Integrated automatic battle system for Arena and Tournaments.", "Conducted the Private Sale Round of NFTs.", "Executed Phases 1, 2 and 3 of the Public Sale Rounds of NFTs."],
     "variant": "default"
   },
   {
     "period": "Q2 2024",
-    "title": "Realms of Glory Beta Launch",
-    "items": [],
+    "title": "Alfa Testing & Beta Release",
+    "items": ["Conducted extensive alpha testing to refine gameplay and mechanics.", "Officially launched the Realms of Glory Beta.", "Integrate Chainlink's cross-chain interoperability protocol to enable seamless and secure multi-chain interactions"],
     "variant": "disabled"
   }
 ]

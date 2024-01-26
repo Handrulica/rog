@@ -20,43 +20,43 @@ const Inaugural = () => {
               game pre-launch
             </p>
             <h2 className="heading-sm sm:heading-xs lg:heading-md font-bold sm:font-medium text-accent px-12 mt-5 sm:mt-10 md:mt-[3.5rem] lg:mt-[3.75rem]">
-              Public Sale Limited Edition NFTs Coming Soon!
+              Utility NFTs Public Sale Coming Soon!
             </h2>
           </div>
-          <div className="pt-40 md:pt-[2rem] pb-16 md:pb-0 px-6 lg:-mt-14">
+          <div className="pb-24 md:pt-[2rem] pb-16 md:pb-24 px-1 sm:px-6 pt-40 md:pt-[4rem] lg:-mt-14">
             <div className="w-full flex justify-around lg:px-16">
               <ImageWithFallback
                 src='inaugural/card'
-                className="hidden md:block w-[10.2rem] h-[12.5rem] md:w-[12.6rem] md:h-[16.1rem] lg:w-[17rem] lg:h-[19.2rem] mx-5"
+                className="hidden lg:block w-[10.2rem] h-[12.5rem] md:w-[12.6rem] md:h-[16.1rem] lg:w-[16.5rem] lg:h-[19.2rem] mx-5"
               />
-              <div className="grid grid-cols-3 w-full md:mt-10 md:px-8 lg:max-w-md lg:mt-20 ">
+              <div className="grid grid-cols-3 w-full md:mt-10 md:px-8 lg:max-w-md lg:mt-20 lg:-ml-10 ">
                 <div className="text-center md:space-y-2">
-                  <span className="heading-2xxs md:heading-xxs font-bold md:font-medium text-accent">
-                    PRE-SALE
+                  <span className="heading-xxs md:heading-xxs font-bold md:font-medium text-accent">
+                    PRIVATE ROUND
                   </span>
                   <Progress value={100} />
                 </div>
                 <div className="text-center md:space-y-2">
-                  <span className="heading-2xxs md:heading-xxs font-bold md:font-medium text-[#766A58]">
+                  <span className="heading-xxs md:heading-xxs font-bold md:font-medium text-[#766A58]">
                     WHITELIST
                   </span>
                   <Progress value={0} />
                 </div>
                 <div className="text-center md:space-y-2">
-                  <span className="heading-2xxs md:heading-xxs font-bold md:font-medium text-[#766A58]">
+                  <span className="heading-xxs md:heading-xxs font-bold md:font-medium text-[#766A58]">
                     PUBLIC SALE
                   </span>
                   <Progress value={0} />
                 </div>
               </div>
               <ImageWithFallback
-                src='inaugural/card'
-                className="hidden md:block w-[10.2rem] h-[12.5rem] md:w-[12.6rem] md:h-[16.1rem] lg:w-[17rem] lg:h-[19.2rem] scale-x-[-1] mx-5"
+                src='nfts/images/hades'
+                className="hidden lg:block w-[10.2rem] h-[12.5rem] md:w-[12.6rem] md:h-[16.1rem] lg:w-[14rem] lg:h-[17.6rem] mx-5 rotate-[10deg]"
               />
             </div>
           </div>
         </div>
-        <div className="hidden md:block lg:-mt-48 lg:px-[3%] xl:px-[10%]">
+        <div className="hidden md:block mt-32 lg:-mt-48 lg:px-[3%] xl:px-[10%]">
           <Genesis />
         </div>
       </div>

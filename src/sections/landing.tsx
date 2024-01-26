@@ -220,38 +220,38 @@ export const Landing = () => {
             </div>
           }
         </div>
-        <div className="relative bg-neutrals-0/30 bg-neutrals-0/30 h-[18rem] sm:h-[28rem] md:h-[38.5rem] lg:h-[50rem] xl:h-[40rem] lg:-mt-10">
+        <div className="relative bg-neutrals-0/30 bg-neutrals-0/30 h-[30rem] sm:h-[28rem] md:h-[40.5rem] lg:h-[50rem] xl:h-[40rem] lg:-mt-10">
           <div className="absolute w-full">
             <div className="relative w-[50%]">
               <ImageWithFallback
                 src={"landing/character_3"}
                 alt="character_3"
-                wrapperClassName="absolute top-3 sm:top-5 md:top-9"
-                className="h-[18rem] sm:h-[24.5rem] md:h-[32rem] lg:h-[39.3rem] dark"
+                wrapperClassName="absolute top-3 sm:top-5 md:top-[0px]"
+                className="h-[16rem] sm:h-[24.5rem] md:h-[32rem] lg:h-[39.3rem] dark"
               />
               <ImageWithFallback
                 src={"landing/character_2"}
                 alt="character_2"
-                wrapperClassName="absolute top-3 sm:top-5 md:top-9"
-                className="h-[18rem] sm:h-[24.5rem] md:h-[32rem] lg:h-[39.3rem] dark"
+                wrapperClassName="absolute top-16 sm:top-[7rem] md:top-24"
+                className="h-[14rem] sm:h-[22.5rem] md:h-[29rem] lg:h-[36.3rem] dark"
               />
             </div>
-            <div className="relative w-[70%] sm:w-[50%] float-right flex justify-end lg:-ml-20">
+            <div className="relative w-[55%] sm:w-[60%] float-right flex justify-end lg:-ml-20">
               <ImageWithFallback
                 src={"landing/character_4"}
                 alt="character_4"
-                wrapperClassName="absolute top-3 sm:top-5 md:top-9"
-                className="h-[18rem] sm:h-[24.5rem] md:h-[32rem] lg:h-[39.3rem] dark"
+                wrapperClassName="absolute top-8 sm:top-5 md:top-9"
+                className="h-[17rem] sm:h-[24.5rem] md:h-[32rem] lg:h-[39.3rem] dark"
               />
               <ImageWithFallback
                 src="landing/character_1"
                 alt="character_1"
-                wrapperClassName="absolute  top-16 sm:top-24 md:top-48 lg:top-20"
-                className="h-[15rem] sm:h-[18.5rem] md:h-[24rem] lg:h-[35.3rem] dark"
+                wrapperClassName="absolute top-16 sm:top-24 md:top-48 lg:top-20"
+                className="h-[13rem] sm:h-[22.5rem] md:h-[29rem] lg:h-[35.3rem] dark"
               />
             </div>
           </div>
-          <div className="w-full pt-10 hidden xl:block absolute bottom-[50%]">
+          <div className="w-full lg:translate-y-[5rem] hidden xl:block absolute bottom-[50%]">
             <h1 className="heading-md sm:heading-lg md:heading-3lg text-primary-85 font-bold sm:font-bold md:font-bold text-center px-8 tracking-[1.9px] leading-[2rem]">
               {" "}
               Collect, battle, <br /> stake and{" "}
@@ -266,7 +266,7 @@ export const Landing = () => {
               eth rewards for each victory{" "}
             </h2>
             <div className="flex w-full justify-center mt-8 gap-6">
-              <Button variant="default" size="default" className="w-48">
+              <Button onClick={() => console.log("salut")} variant="default" size="default" className="w-48">
                 Docs
               </Button>
               <Button variant="default" size="default" className="w-48">
@@ -277,7 +277,7 @@ export const Landing = () => {
               </Button>
             </div>
           </div>
-          <div className="gradient-one sm:bg-none w-full pt-16 pb-2 flex flex-col justify-center absolute bottom-[0px] top-[20rem] sm:top-[12rem] md:top-[23rem]">
+          <div className="gradient-one sm:bg-none w-full pt-16 pb-2 flex flex-col justify-center absolute bottom-[0px] top-[10rem] sm:top-[12rem] md:top-[23rem]">
             <div className="gradient-one w-full xl:hidden">
               <div className="gradient-one sm:bg-none">
                 <h1 className="heading-md sm:heading-lg md:heading-3lg text-primary-85 font-bold sm:font-bold md:font-bold text-center px-8 tracking-[1.9px] leading-[2rem]">
@@ -294,7 +294,7 @@ export const Landing = () => {
                   eth rewards for each victory{" "}
                 </h2>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-3 mt-8 sm:mt-16 w-full bg-neutrals-0">
+              <div className="grid grid-cols-1 sm:grid-cols-3 mt-8 sm:mt-16 w-full">
                 <Button
                   variant="default"
                   size="default"
@@ -319,7 +319,7 @@ export const Landing = () => {
               </div>
             </div>
             <div className="bg-neutrals-0 xl:gradient-one w-full pt-2 xl:pt-10 hidden xl:mt-32 lg:block">
-              <Loop direction="left" speed={20} className="mt-12">
+              <Loop direction="left" speed={30} className="mt-12">
                 {landingData.cards.map((image, index) => (
                   <ImageWithFallback
                     src={image}
@@ -335,8 +335,8 @@ export const Landing = () => {
       </div>
       <Loop
         direction="left"
-        speed={20}
-        className="mt-[20rem] sm:mt-12 md:mt-24 bg-neutrals-0 lg:hidden"
+        speed={30}
+        className="mt-[6rem] sm:mt-12 md:mt-24 lg:hidden"
       >
         {landingData.cards.map((image, index) => (
           <ImageWithFallback
